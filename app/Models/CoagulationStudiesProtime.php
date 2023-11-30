@@ -14,4 +14,7 @@ class CoagulationStudiesProtime extends Model
         'activity',
         'inr'
     ];
+    public function coagulations_protimes(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

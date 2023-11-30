@@ -19,4 +19,7 @@ class SerologyExamTest extends Model
         'troponin',
         'remarks'
     ];
+    public function serology_test(){
+        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+    }
 }

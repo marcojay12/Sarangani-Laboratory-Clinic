@@ -15,4 +15,7 @@ class UrineCreatinine extends Model
         'hours_urine_creatinine',
         'creatinine_clearance'
     ];
+    public function urine_creatinines(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

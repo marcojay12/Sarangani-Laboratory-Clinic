@@ -15,4 +15,7 @@ class UrineCrystalExam extends Model
         'uric_acid',
         'others'
     ];
+    public function urine_crystal(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

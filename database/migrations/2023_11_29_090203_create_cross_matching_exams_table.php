@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('cross_matching_exams', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('cross_matchings_id')->references('id')->on('cross_matchings')->onDelete('cascade');
             $table->string('blood_type');
             $table->string('method_test');
             $table->string('serial_number');

@@ -13,4 +13,7 @@ class RedCellIndices extends Model
         'mch',
         'mchc'
     ];
+    public function red_cell(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

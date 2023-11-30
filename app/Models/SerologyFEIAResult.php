@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FecalysisFEIAResult extends Model
+class SerologyFEIAResult extends Model
 {
     use HasFactory;
     protected $fillable = [
@@ -15,4 +15,7 @@ class FecalysisFEIAResult extends Model
         'ck_mb',
         'remarks'
     ];
+    public function feia_result(){
+        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+    }
 }

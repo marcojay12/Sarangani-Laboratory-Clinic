@@ -11,4 +11,7 @@ class Hemoglobin extends Model
     protected $fillable = [
         'hba1c'
     ];
+    public function hemoglobins(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

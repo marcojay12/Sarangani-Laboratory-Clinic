@@ -15,4 +15,7 @@ class DifferentialCount extends Model
         'eosinophils',
         'basophils'
     ];
+    public function differentials(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

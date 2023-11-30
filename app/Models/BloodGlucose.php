@@ -14,4 +14,7 @@ class BloodGlucose extends Model
         'second_hour',
         'third_hour'
     ];
+    public function bloodglocoses(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

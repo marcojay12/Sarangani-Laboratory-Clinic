@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('microbiology_afb_stains', function (Blueprint $table) {
             $table->id();
-          //  $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
+            $table->foreignId('microbiologies_id')->references('id')->on('microbiologies')->onDelete('cascade');
             $table->string('specimen');
             $table->string('result');
             $table->string('remarks');

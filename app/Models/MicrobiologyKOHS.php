@@ -14,4 +14,7 @@ class MicrobiologyKOHS extends Model
         'result',
         'remarks'
     ];
+    public function kohs(){
+        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+    }
 }

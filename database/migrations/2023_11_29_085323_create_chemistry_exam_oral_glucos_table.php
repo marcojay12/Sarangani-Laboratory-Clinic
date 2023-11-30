@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('chemistry_exam_oral_glucos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('glucose_load');
             $table->string('glucose_result');
             $table->string('remarks');

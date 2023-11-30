@@ -16,4 +16,7 @@ class MicrobiologyGramStain extends Model
         'polymorphonuclears',
         'remarks'
     ];
+    public function gram_stain(){
+        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+    }
 }

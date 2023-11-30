@@ -15,4 +15,7 @@ class Electrolytes extends Model
         'ph',
         'chloride'
     ];
+    public function electrolyte(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

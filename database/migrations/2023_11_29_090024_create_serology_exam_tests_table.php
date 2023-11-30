@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('serology_exam_tests', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('serologies_id')->references('id')->on('serologies')->onDelete('cascade');
             $table->string('hbsag');
             $table->string('anti_hbs');
             $table->string('anti_hcv');

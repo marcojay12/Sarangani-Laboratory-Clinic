@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('coagulation_studies_protimes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('hematologies_id')->references('id')->on('hematologies')->onDelete('cascade');
             $table->string('pt');
             $table->string('control');
             $table->string('activity');

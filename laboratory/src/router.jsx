@@ -10,6 +10,7 @@ import UserInformation from "./Admin/UsersInformation";
 import AdminLayout from "./components/AdminLayout";
 import Defaultlayout from "./components/DefaultLayout";
 import PatientRegistration from "./Users/PatientRegistration";
+import DoctorNew from "./Admin/DoctorsNew";
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
             {
                 path: '/doctor',
                 element: <DoctorsInformation />
+            },
+            {
+                path: '/doctor/new',
+                element: <DoctorNew />
             },
             {
                 path: '/medical_technologist',

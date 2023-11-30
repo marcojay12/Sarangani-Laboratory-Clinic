@@ -14,4 +14,7 @@ class UrineCastExam extends Model
         'rbc_cast',
         'granular_cast'
     ];
+    public function urine_cast(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

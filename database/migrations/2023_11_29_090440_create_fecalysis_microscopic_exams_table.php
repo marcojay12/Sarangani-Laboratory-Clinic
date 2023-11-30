@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('fecalysis_microscopic_exams', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
             $table->string('rbc');
             $table->string('wbc');
             $table->string('fat_globules');

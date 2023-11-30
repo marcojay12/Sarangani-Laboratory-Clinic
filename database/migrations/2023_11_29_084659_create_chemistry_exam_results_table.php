@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('chemistry_exam_results', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('fbs');
             $table->string('rbs');
             $table->string('creatinine');

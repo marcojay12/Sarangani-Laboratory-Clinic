@@ -12,4 +12,7 @@ class BloodTypeExam extends Model
         'blood_typing',
         'remarks'
     ];
+    public function bloodtype(){
+        return $this->belongsTo(BloodTyping::class, 'blood_typings_id', 'id');
+    }
 }

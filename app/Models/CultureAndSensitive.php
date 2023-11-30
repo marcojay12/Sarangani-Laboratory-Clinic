@@ -15,4 +15,8 @@ class CultureAndSensitive extends Model
         'result',
         'remarks'
     ];
+
+    public function chem_culture_sensitive(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

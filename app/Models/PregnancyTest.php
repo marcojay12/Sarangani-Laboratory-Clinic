@@ -13,4 +13,7 @@ class PregnancyTest extends Model
         'result',
         'remarks'
     ];
+    public function pregnancy_test(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

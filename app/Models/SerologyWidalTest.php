@@ -18,4 +18,7 @@ class SerologyWidalTest extends Model
         'paratyphi_bo',
         'paratyphi_co',
     ];
+    public function widal_test(){
+        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+    }
 }

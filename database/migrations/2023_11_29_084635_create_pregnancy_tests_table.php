@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('pregnancy_tests', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('result');
             $table->string('remarks');
             $table->timestamps();

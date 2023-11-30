@@ -13,4 +13,7 @@ class CoagulationStudiesAppts extends Model
         'control',
         'ratio'
     ];
+    public function coagulations_appts(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

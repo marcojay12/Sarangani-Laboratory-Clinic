@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('urine_crystal_exams', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
             $table->string('amorphous_urates');
             $table->string('amorphous_phosphates');
             $table->string('calcium_oxalates');

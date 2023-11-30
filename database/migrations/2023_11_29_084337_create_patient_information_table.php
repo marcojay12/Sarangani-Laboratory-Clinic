@@ -27,10 +27,10 @@ return new class extends Migration
                 'male',
                 'female'
             ]);
-           // $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
+          //  $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
           //  $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
             $table->text('address');
-            $table->string('request_physician');
+            $table->foreignId('physicians_id')->references('id')->on('physicians')->onDelete('cascade');
             $table->string('ward');
             $table->string('bed_number');
             $table->timestamps();

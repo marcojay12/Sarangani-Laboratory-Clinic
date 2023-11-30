@@ -11,4 +11,7 @@ class ErythrocyteSedimentation extends Model
     protected $fillable = [
         'erythrocyte'
     ];
+    public function erythrocyte_sedimentations(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

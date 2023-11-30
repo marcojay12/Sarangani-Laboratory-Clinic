@@ -22,4 +22,7 @@ class CrossMatchingExam extends Model
         'others'
 
     ];
+    public function cross_match_exam(){
+        return $this->belongsTo(CrossMatching::class, 'cross_matchings_id', 'id');
+    }
 }

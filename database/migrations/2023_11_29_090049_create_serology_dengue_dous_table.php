@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('serology_dengue_dous', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('serologies_id')->references('id')->on('serologies')->onDelete('cascade');
             $table->string('ns');
             $table->string('ig_g');
             $table->string('ig_m');

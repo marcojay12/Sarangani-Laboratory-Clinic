@@ -12,4 +12,7 @@ class FecalysisMacroscopicExam extends Model
         'color',
         'consistency'
     ];
+    public function fecalysis_macro_exam(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

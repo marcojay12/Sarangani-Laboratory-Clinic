@@ -12,4 +12,7 @@ class SerologyTyphoidTest extends Model
         'ig_g',
         'ig_m'
     ];
+    public function typhoid_test(){
+        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+    }
 }

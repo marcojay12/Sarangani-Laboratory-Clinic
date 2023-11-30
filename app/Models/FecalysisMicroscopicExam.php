@@ -14,4 +14,7 @@ class FecalysisMicroscopicExam extends Model
         'fat_globules',
         'yeast_cells'
     ];
+    public function fecalysis_micro_exam(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

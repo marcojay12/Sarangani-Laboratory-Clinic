@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('fecalysis_f_e_i_a_results', function (Blueprint $table) {
+        Schema::create('microscopies', function (Blueprint $table) {
             $table->id();
-            $table->string('fluorescence_enzyme');
-            $table->string('cardiac_markers');
-            $table->string('troponin');
-            $table->string('ck_mb');
-            $table->string('remarks');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fecalysis_f_e_i_a_results');
+        Schema::dropIfExists('microscopies');
     }
 };

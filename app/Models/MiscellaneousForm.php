@@ -13,4 +13,7 @@ class MiscellaneousForm extends Model
         'result',
         'remarks'
     ];
+    public function miscform(){
+        return $this->belongsTo(Miscellaneous::class, 'miscellaneouses_id', 'id');
+    }
 }

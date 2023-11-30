@@ -27,4 +27,7 @@ protected $fillable = [
     'ward',
     'bed_number',
 ];
+// public function patient_info(){
+//     return $this->belongsTo(::class, 'microscopies_id', 'id');
+// }
 }

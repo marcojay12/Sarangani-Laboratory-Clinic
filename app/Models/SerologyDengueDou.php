@@ -13,4 +13,8 @@ class SerologyDengueDou extends Model
         'ig_g',
         'ig_m'
     ];
+    public function dengue_dou()
+    {
+        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+    }
 }

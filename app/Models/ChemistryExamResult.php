@@ -21,6 +21,9 @@ class ChemistryExamResult extends Model
         'magnesium',
         'phosphorus',
         'amylase',
-        'remarks',
+        'remarks'
     ];
+    public function chem_exam_results(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

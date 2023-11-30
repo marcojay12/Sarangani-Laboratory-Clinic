@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('urine_cast_exams', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
             $table->string('hyaline_cast');
             $table->string('wbc_cast');
             $table->string('rbc_cast');

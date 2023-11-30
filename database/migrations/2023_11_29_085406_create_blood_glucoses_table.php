@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('blood_glucoses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('fbs');
             $table->string('first_hour');
             $table->string('second_hour');

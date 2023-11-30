@@ -14,4 +14,7 @@ class UrineChemicalExam extends Model
         'glucose',
         'protein'
     ];
+    public function urine_chemical(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

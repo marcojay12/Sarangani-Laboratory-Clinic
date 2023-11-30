@@ -13,4 +13,7 @@ class ChemistryExamOralGlucos extends Model
         'glucose_result',
         'remarks'
     ];
+    public function chem_oral_glucos(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

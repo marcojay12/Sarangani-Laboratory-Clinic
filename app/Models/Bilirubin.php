@@ -13,4 +13,8 @@ class Bilirubin extends Model
         'direct_bilirubin',
         'indirect_bilirubin'
     ];
+
+    public function bilirubins(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

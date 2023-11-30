@@ -21,4 +21,7 @@ class FecalysisTest extends Model
         'others',
         'remarks',
     ];
+    public function fecalysis_test(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

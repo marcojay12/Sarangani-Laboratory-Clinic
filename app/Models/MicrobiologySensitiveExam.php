@@ -13,4 +13,7 @@ class MicrobiologySensitiveExam extends Model
         'resistant',
         'intermediate'
     ];
+    public function sensitive_exam(){
+        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+    }
 }

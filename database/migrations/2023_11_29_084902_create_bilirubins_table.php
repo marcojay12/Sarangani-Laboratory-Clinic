@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('bilirubins', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('total_bilirubin');
             $table->string('direct_bilirubin');
             $table->string('indirect_bilirubin');

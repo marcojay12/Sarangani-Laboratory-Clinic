@@ -14,4 +14,7 @@ class LipidProfile extends Model
         'hdl',
         'ldl'
     ];
+    public function lipid_prof(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

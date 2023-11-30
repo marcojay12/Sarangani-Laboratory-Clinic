@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('tp_ag_ratios', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('total_protein');
             $table->string('albumin');
             $table->string('globulin');

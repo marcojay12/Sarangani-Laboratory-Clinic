@@ -11,4 +11,7 @@ class Urea extends Model
     protected $fillable = [
         'urea'
     ];
+    public function urea(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

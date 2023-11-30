@@ -14,4 +14,7 @@ class TpAgRatio extends Model
         'globulin',
         'ag_ratio'
     ];
+    public function tp_ag(){
+        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    }
 }

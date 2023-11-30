@@ -14,4 +14,7 @@ class CompleteBloodCount extends Model
         'rbc_count',
         'wbc_count'
     ];
+    public function complete_blood_count(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }

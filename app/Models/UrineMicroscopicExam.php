@@ -15,4 +15,7 @@ class UrineMicroscopicExam extends Model
         'bacteria',
         'mucus_threads'
     ];
+    public function urine_microscopic(){
+        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+    }
 }

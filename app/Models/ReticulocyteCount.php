@@ -9,7 +9,9 @@ class ReticulocyteCount extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'reticulocyte',
-        'remarks'
+        'reticulocyte'
     ];
+    public function reticulocytes(){
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+    }
 }
