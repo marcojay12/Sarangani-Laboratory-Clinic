@@ -11,7 +11,9 @@ use Illuminate\Support\Facades\Auth;
 class AdminSectionController extends Controller
 {
     //
-    public function admin_signup(AdminSignup $request)
+    /** @var App\Models\AdminSection $admin*/
+
+    public function signup(AdminSignup $request)
     {
         $data = $request->validated();
 
@@ -29,7 +31,7 @@ class AdminSectionController extends Controller
         ]);
     }
 
-    public function admin_login(AdminLogin $request)
+    public function login(AdminLogin $request)
     {
         $credentials = $request->validated();
         $remember = $credentials['remember'] ?? false;
@@ -49,9 +51,10 @@ class AdminSectionController extends Controller
         ]);
     }
 
-    public function admin_logout(Request $request)
+    public function logout(Request $request)
     {
         /** @var AdminSection $admin */
+
         $admin = Auth::user();
 
         $admin->currentAccessToken()->delete();

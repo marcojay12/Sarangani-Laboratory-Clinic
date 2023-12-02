@@ -13,7 +13,7 @@ class AdminLogin extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,9 @@ class AdminLogin extends FormRequest
     {
         return [
             //
+            'admin_username' => 'required|string|unique',
+            'password' => 'required',
+            'remember' => 'boolean'
         ];
     }
 }

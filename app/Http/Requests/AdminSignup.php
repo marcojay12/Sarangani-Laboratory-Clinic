@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rules\Password;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AdminSignup extends FormRequest
@@ -13,7 +14,7 @@ class AdminSignup extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +26,12 @@ class AdminSignup extends FormRequest
     {
         return [
             //
+            'name' => 'required|string',
+            'admin_username' => 'required|string|unique',
+            'password' => [
+                'required',
+                Password::min(8)->mixedcase()->numbers()->symbols()
+            ]
         ];
     }
 }

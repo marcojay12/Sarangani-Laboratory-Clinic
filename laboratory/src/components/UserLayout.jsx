@@ -1,17 +1,7 @@
-import { useStateContext } from "../contexts/ContextProvider"
+import { Outlet } from "react-router-dom";
 
-
-
-
-
-export default function Userlayout() {
-   const {currentUser, userToken} = useStateContext();
-
-   if (userToken){
-        return <Navigator to='/' />
-   }
-
-   return (
+export default function UserLayout() {
+    return (
         <Outlet />
     )
 }

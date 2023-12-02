@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/signup', [AdminSectionController::class, 'admin_signup']);
-Route::get('/login', [AdminSectionController::class, 'admin_login']);
+Route::post('/signup', [AdminSectionController::class, 'signup']);
+Route::post('/login', [AdminSectionController::class, 'login']);
