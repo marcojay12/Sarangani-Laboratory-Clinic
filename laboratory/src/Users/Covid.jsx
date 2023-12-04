@@ -234,7 +234,7 @@ export default function Covid() {
           <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
             <div className="sm:col-span-2 " >
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
                 Type of Specimen
               </label>
               <div className="mt-2">
@@ -249,7 +249,7 @@ export default function Covid() {
             </div>
 
                         <div className="sm:col-span-2 " >
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
                 Test Kit Brand
               </label>
               <div className="mt-2">
@@ -263,7 +263,7 @@ export default function Covid() {
               </div>
             </div>
                         <div className="sm:col-span-2 " >
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
                 Method
               </label>
               <div className="mt-2">
@@ -292,7 +292,7 @@ export default function Covid() {
               </div>
             </div>
             <div className="sm:col-span-2 " >
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
                 Value mIU/ml    References:0-0.04
               </label>
               <div className="mt-2">
@@ -343,15 +343,63 @@ export default function Covid() {
 
              <div className="sm:col-span-2 " >
               <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
-                Pathologist
+                                    {/* blank */}
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist prepared by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist verified by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of Pathologist
+              </label>
+            </div>
+
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                    Medical Technologist
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    Medical Technologist
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Anatomic and Clinic Pathologist
               </label>
             </div>
 
           </div>
         </div>
 
-
-
+        
                             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
                                     <Tbutton>Add</Tbutton>
                             </div>

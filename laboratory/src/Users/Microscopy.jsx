@@ -2,6 +2,7 @@ import { PhotoIcon } from "@heroicons/react/24/outline";
 import PageComponent from "../components/PageComponent";
 import Tbutton from "../components/core/TButton";
 import { useState } from "react";
+import Tab from "../components/tab";
 
 export default function Microscopy() {
         const [doctor, setDoctor] = useState({
@@ -22,6 +23,9 @@ export default function Microscopy() {
         ev.preventDefault();
         console.log(ev);
     }
+
+
+
 
     return (
 <PageComponent title='microscopy'>
@@ -224,41 +228,39 @@ export default function Microscopy() {
 
 
 {/* Blood Typing */}
+                           <div className="border-b border-gray-900/10 pb-12">
+                            <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
 
-          <div className="border-b border-gray-900/10 pb-12">
-        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
-            <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
-                Blood Typing
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="block w-full h-24 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
+                                <div className="sm:col-span-1 " >
 
-            </div>
-             <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
-                Remarks
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
+                                     <h2 className="text-2xl text-center font-semibold leading-7 text-gray-900">Clical Microscopy</h2>
+                                </div>
 
-          </div>
-        </div>
+                                    <Tab active={1}>
+                                        {
+                                           // tabContent.map((tab,idx) => <Tab.TabPanel key={`Tab-${idx}`} tab={tab.content}>{}</Tab.TabPanel>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        }
+                                    </Tab>
+
+
+
+                            </div>
+                           </div>
+
+
 
 
         <div className="border-b border-gray-900/10 pb-12">

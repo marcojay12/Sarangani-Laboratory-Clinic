@@ -53,7 +53,7 @@ export default function Serology() {
 
           <div className="border-b border-gray-900/10 pb-12">
 
-                                            <div className="border-b border-gray-900/10 pb-12">
+        <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-4">
              <div className="sm:col-span-2 " >
 

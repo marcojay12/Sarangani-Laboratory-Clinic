@@ -285,6 +285,27 @@ export default function Miscellaneous() {
         </div>
 
 
+                                    {/* Test tabs */}
+                <div className="border-b border-gray-900/10 pb-12">
+                 <div className="sm:col-span-1 " >
+                      <h2 className="text-base font-semibold leading-7 text-gray-900">Test Tabs</h2>
+                 </div>
+                    <div className="bloc-tabs">
+                        <div className="tabs active-tabs" > Tab 1</div>
+                        <div className="tabs">Tab 2</div>
+                        <div className="tabs">Tabs 3</div>
+                    </div>
+
+                    <div className="content active-content">
+                        <h2>Content 1</h2>
+                        <hr />
+                        <p>
+                            helooo content 1
+                        </p>
+                    </div>
+
+                </div>
+
 
                             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
                                     <Tbutton>Add</Tbutton>
