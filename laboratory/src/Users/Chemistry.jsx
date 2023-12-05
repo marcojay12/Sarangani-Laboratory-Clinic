@@ -213,8 +213,7 @@ export default function Chemistry() {
 
 {/* Chemistry*/}
 
-                                    {/* Culture And Sensitivity Initial Result */}
-            <div className="sm:col-span-1 " >
+   <div className="sm:col-span-1 " >
             <h2 className="text-2xl font-semibold leading-7 text-gray-900">Culture And Sensitivity Initial Result</h2>
             </div>
 
@@ -543,8 +542,7 @@ export default function Chemistry() {
         <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-1 sm:grid-cols-4">
             <div className="grid grid-col-2 gap-1">
             <div className="sm:col-span-1 " >
-            <h2 className="text-lg font-bold leading-7 text-gray-900">Test</h2>
-            <div className="text-md font-semibold leading-7 text-gray-900" >Electrolytes</div>
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Electrolytes Test</h2>
             </div>
                         <div>Sodium</div>
                         <div>Potassium</div>
@@ -553,24 +551,21 @@ export default function Chemistry() {
                         <div>pH</div>
                         <div>Chloride</div>
                         <div className="text-sm font-semibold">BILIRUBIN</div>
+
                         <div>Total Bilirubin</div>
                         <div>Direct Bilirubin</div>
                         <div>Indirect Bilirubin</div>
-                        <div className="text-sm font-semibold">TP A/G (Total Protein A/G Ratio)</div>
-                        <div>Total Protein</div>
-                        <div>Albumin</div>
-                        <div>Globulin</div>
-                        <div>A/G Ratio</div>
+
 
 
             </div>
-                        <div className="grid grid-col-2 gap-2">
+                        <div className="grid grid-col-1 gap-1">
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
             </div>
-            <br />
+
             <div>
-                        <div className="sm:col-span-2">
+                        <div className="sm:col-span-1">
                             <div className="mt">
                                 <input
                                 type="text"
@@ -639,7 +634,7 @@ export default function Chemistry() {
                              </div>
                         </div>
              </div>
-
+<br/>
 
                          <div>
                         <div className="sm:col-span-2">
@@ -684,64 +679,7 @@ export default function Chemistry() {
                              </div>
                         </div>
              </div>
-                        <div><br /></div>
-                                      <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
-                                      <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
-             <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
-             <div><br /></div>
-             <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
+
 
 
             </div>
@@ -749,7 +687,7 @@ export default function Chemistry() {
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
             </div>
-                        <br />
+
                         <div>mmol/L</div>
                         <div>mmol/L</div>
                         <div>mmol/L</div>
@@ -759,19 +697,14 @@ export default function Chemistry() {
                         <div>mg/dL</div>
                         <div>mg/dL</div>
                         <div>mg/dL</div>
-                        <div><br /></div>
-                        <div>g/dL</div>
-                        <div>g/dL</div>
-                        <div>g/dL</div>
-                        <div><br /></div>
-                        <div><br /></div>
+
 
             </div>
                         <div className="grid grid-col-2 gap-2">
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
             </div>
-                        <br />
+
                         <div>135-145</div>
                         <div>3.5-5.5</div>
                         <div>2.20-2.90</div>
@@ -782,12 +715,8 @@ export default function Chemistry() {
                         <div>0.2-1.2</div>
                         <div>{'<'} 0.2</div>
                         <div>0.2-1.2</div>
-                        <div><br /></div>
-                        <div className="text-sm">6.4-8.3 Ambulatory 6.0-7.8 at Rest  </div>
-                        <div className="text-sm"> Age: {'< 60 | 3.5-5.2'} 60-90 | 3.2-4.6 {'> 90 | 2.9-4.5'}</div>
-                        <div>2.0-3.9</div>
-                        <div><br /></div>
-                        <div><br /></div>
+
+
 
             </div>
 
@@ -938,6 +867,123 @@ export default function Chemistry() {
             <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">24 Hours</h2>
             </div>
+                        <div>Total Protein</div>
+                        <div>< br/></div>
+                        <div>Albumin</div>
+                        <div><br/></div>
+                        <div><br /></div>
+                        <div>Globulin</div>
+                        <div>A/G Ratio</div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+
+            </div>
+
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+             <div><br/></div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+             <br/>
+             <br/>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
+            </div>
+                        <div>g/dL</div>
+                        <br />
+                        <div>g/dL</div>
+                        <br />
+                        <br />
+                        <div>g/dL</div>
+                        <br />
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
+            </div>
+                        <div>6.4-8.3 Ambulatory</div>
+                        <div>6.0-7.8 at Rest</div>
+                        <div>Age: {'< 60 | 3.5-5.2'}</div>
+                        <div>60-90 | 3.2-4.6</div>
+                        <div>{'> 90'} | 2.9-4.5</div>
+                        <div>2.0-3.9</div>
+                        <br/>
+
+
+            </div>
+
+
+        </div>
+
+
+         <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-4">
+
+            <div className="grid grid-col-2 gap-2">
+
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">24 Hours</h2>
+            </div>
                         <div>Cholesterol</div>
                         <div>Triglyceride</div>
                         <div>HDL</div>
@@ -1068,9 +1114,76 @@ export default function Chemistry() {
         </div>
 
 
+         <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-4">
+
+            <div className="grid grid-col-2 gap-2">
+
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Test</h2>
+            </div>
+                        <div className="text-md font-bold">UREA</div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+
+            </div>
+            <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
+            </div>
+                        <div>mg/dL</div>
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
+            </div>
+                        <div>Age: 21-60 | 3.5-5.2</div>
+                        <div>60-90 | 17.2-49.3</div>
+                        <div>{'> 90 | 17.2-49.3'}</div>
+
+
+
+            </div>
+
+
+        </div>
+
+
 
 
     </div>
+
+                   <div className="sm:col-span-8 " >
+                    <h2 className="text-lg font-bold leading-7 text-gray-900">Remarks</h2>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  placeholder="Remarks"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
  </div>
 
 

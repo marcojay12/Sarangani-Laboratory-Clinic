@@ -224,44 +224,105 @@ export default function CrossMatching() {
 
 
 {/* Blood Typing */}
-
-          <div className="border-b border-gray-900/10 pb-12">
-        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
-            <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
-                Blood Typing
+                        <div className="border-b border-gray-900/10 pb-12">
+                        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+                              <div className="sm:col-span-1">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                PATIENT BLOOD TYPE
               </label>
               <div className="mt-2">
                 <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="block w-full h-24 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-
-            </div>
-             <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
-                Remarks
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  id="age"
+                  name="age"
+                  type="age"
+                  autoComplete="age"
+                  placeholder="Blood Type"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
+
+                                          <div className="sm:col-span-1">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                METHOD
+              </label>
+              <div className="mt-2">
+                <input
+                  id="age"
+                  name="age"
+                  type="age"
+                  autoComplete="age"
+                  placeholder="Method"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+
+                        </div>
+                        </div>
+
+          <div className="border-b border-gray-900/10 pb-12">
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-1">
+        <table class="border-collapse border border-slate-400 ...">
+  <thead>
+    <tr>
+      <th class="border border-slate-300 ...">Serial Number</th>
+      <th class="border border-slate-300 ...">Donor`s BloodType</th>
+      <th class="border border-slate-300 ...">Source</th>
+      <th class="border border-slate-300 ...">Component</th>
+      <th class="border border-slate-300 ...">Content</th>
+      <th class="border border-slate-300 ...">Extract Date</th>
+      <th class="border border-slate-300 ...">Expiry Date</th>
+      <th class="border border-slate-300 ...">Crossmatching Result</th>
+    </tr>
+  </thead>
+  <tbody className="text-center">
+    <tr>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+      <td class="border border-slate-300 ...">sample</td>
+
+    </tr>
+
+  </tbody>
+</table>
           </div>
+                             <div className="sm:col-span-8 " >
+                    <h2 className="text-lg font-bold leading-7 text-gray-900">Others</h2>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  placeholder="Others"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                               <div className="sm:col-span-8 " >
+                    <h2 className="text-lg font-bold leading-7 text-gray-900">Remarks</h2>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  placeholder="Remarks"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
         </div>
 
-
-        <div className="border-b border-gray-900/10 pb-12">
+ <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
 
              <div className="sm:col-span-2 " >
@@ -277,7 +338,56 @@ export default function CrossMatching() {
 
              <div className="sm:col-span-2 " >
               <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
-                Pathologist
+                                    {/* blank */}
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist prepared by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist verified by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of Pathologist
+              </label>
+            </div>
+
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                    Medical Technologist
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    Medical Technologist
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Anatomic and Clinic Pathologist
               </label>
             </div>
 
