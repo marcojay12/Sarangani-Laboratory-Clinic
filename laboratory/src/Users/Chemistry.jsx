@@ -324,14 +324,14 @@ export default function Chemistry() {
                         <div>Phosphorus</div>
                         <div>Amylase</div>
             </div>
-                        <div className="grid grid-col-2 gap-2">
-                                        <div className="sm:col-span-1 " >
-            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+                <div className="grid grid-col-2 gap-2">
+                        <div className="sm:col-span-1 " >
+                         <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
 
-            </div>
-            <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
+                        </div>
+                             <div>
+                             <div className="sm:col-span-2">
+                                 <div className="mt">
                                 <input
                                 type="text"
                                 name="last-name"
@@ -342,7 +342,7 @@ export default function Chemistry() {
                                  />
                              </div>
                         </div>
-             </div>
+                         </div>
                          <div>
                         <div className="sm:col-span-2">
                             <div className="mt">
@@ -859,13 +859,12 @@ export default function Chemistry() {
 
 
         </div>
-
  <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-4">
 
             <div className="grid grid-col-2 gap-2">
 
             <div className="sm:col-span-1 " >
-            <h2 className="text-lg font-bold leading-7 text-gray-900">24 Hours</h2>
+            <h2 className="text-lg font-bold leading-7 text-gray-900">TP A/G Test</h2>
             </div>
                         <div>Total Protein</div>
                         <div>< br/></div>
@@ -1184,6 +1183,293 @@ export default function Chemistry() {
                 />
               </div>
             </div>
+ </div>
+
+
+ <div className="border-b border-gray-900/10 pb-12">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-2xl font-semibold leading-7 text-gray-900">Oral Glucos Tolerance Test (OGTT)</h2>
+            </div>
+
+
+    <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+         <div className="sm:col-span-1">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                Glucose Load
+              </label>
+              <div className="mt-2">
+                <input
+                  id="age"
+                  name="age"
+                  type="age"
+                  autoComplete="age"
+                  placeholder="Glucose Load"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+    </div>
+
+
+
+
+
+         <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+
+            <div className="grid grid-col-2 gap-2">
+
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Blood Glucose</h2>
+            </div>
+                        <div className="text-md font-bold">FBS</div>
+                         <div className="text-md font-bold">1st Hour</div>
+                          <div className="text-md font-bold">2nd Hour</div>
+                           <div className="text-md font-bold">3rd Hour</div>
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+
+            </div>
+            <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
+            </div>
+                        <div>mg/dL</div>
+                        <div>mg/dL</div>
+                        <div>mg/dL</div>
+                        <div>mg/dL</div>
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
+            </div>
+                        <div>{'< 95 mg/dL'}</div>
+                        <div>{'< 180 mg/dL'}</div>
+                        <div>{'< 155 mg/dL'}</div>
+                          <div>{'< 1140 mg/dL'}</div>
+
+
+
+            </div>
+             <div className="grid grid-col-2 gap-2">
+
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Urine Glucose</h2>
+            </div>
+                                               <div className="text-md font-bold">Fasting</div>
+                         <div className="text-md font-bold">1st Hour</div>
+                          <div className="text-md font-bold">2nd Hour</div>
+                           <div className="text-md font-bold">3rd Hour</div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+
+            </div>
+            <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+                         <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
+            </div>
+
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
+            </div>
+            </div>
+
+
+
+        </div>
+
+
+
+ <div className="mt-8 border rounded-md border-gray-300 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-4">
+
+            <div className="grid grid-col-2 gap-1">
+
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Test</h2>
+            </div>
+                        <div className="text-lg font-bold">50 Grams Oral Glucose Challenge</div>
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Result</h2>
+
+            </div>
+            <div>
+                        <div className="sm:col-span-2 ">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="last-name"
+                                id="last-name"
+                                autoComplete="family-name"
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
+            </div>
+                        <div>mg/dL</div>
+
+
+
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+                                        <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
+            </div>
+                        <div>{'< 140 mg/dL'}</div>
+
+
+
+            </div>
+        </div>
+
+
+<div className="sm:col-span-8 " >
+                    <h2 className="text-lg font-bold leading-7 text-gray-900">Remarks</h2>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  placeholder="Remarks"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
  </div>
 
 

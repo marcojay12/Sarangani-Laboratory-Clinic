@@ -14,13 +14,6 @@ export default function Microbiology() {
          image_url:null,
 
     });
-        const [toggle, setToggle] = useState(1);
-
-
-        function updateToggle(id) {
-            setToggle(id)
-        }
-
     const onImageChoose = () => {
         console.log('On image choose')
     }
@@ -231,160 +224,451 @@ export default function Microbiology() {
 
 {/* Blood Typing */}
 
+<div className="border-b border-gray-900/10 pb-12">
+                 <div className="sm:col-span-1 " >
+
+            <h2 className="text-2xl font-bold leading-7 text-gray-900">Microbiology Examination Result</h2>
+            </div>
+</div>
+
           <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
             <div className="sm:col-span-1 " >
-            <h2 className=" text-base font-semibold leading-7 text-gray-900">Microbiology Lab Tests</h2>
-            </div>
-            <ul>
-                <li className="flex-fill" onClick={ ()=> updateToggle(1)}>Culture and Sensitivity Final Result</li>
-                <li className="flex-fill" onClick={ ()=> updateToggle(2)}>Sensitivity Report</li>
-                <li className="flex-fill" onClick={ ()=> updateToggle(3)}>Gram Stain</li>
-                <li className="flex-fill" onClick={ ()=> updateToggle(4)}>AFB Stain</li>
-                <li className="flex-fill" onClick={ ()=> updateToggle(5)}>KOH</li>
-            </ul>
-            <div className={toggle === 1 ? "show-content" : "content"}>
-                <h1>Culture and Sensitivity Final Result</h1>
-
-
-                   <div className="sm:col-span-1 " >
-            <h2 className="text-2xl font-semibold leading-7 text-gray-900">Culture And Sensitivity Initial Result</h2>
-            </div>
-
-          <div className="border-b border-gray-900/10 pb-12">
-        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
-            <div className="sm:col-span-2">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Laboratory No.
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Laboratory Number
               </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-
-            <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Specimen Type
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-                        <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Source of Specimen
-              </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-          </div>
-        </div>
-                <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
-                RESULT
-              </label>
-              <div className="mt-2">
-                <textarea
-                  id="about"
-                  name="about"
-                  rows={3}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  defaultValue={''}
-                />
-              </div>
-
-               <div className="sm:col-span-8 " >
-
               <div className="mt-2">
                 <input
                   type="text"
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
-            </div>
-
-
-
-            </div>
-
-            <div className={toggle === 2 ? "show-content" : "content"}>
-                <h1>Sensitivity Report</h1>
-                            <div className="sm:col-span-5">
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Requesting Physician
+                        <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Specimen Type
               </label>
               <div className="mt-2">
                 <input
-                  id="age"
-                  name="age"
-                  type="age"
-                  autoComplete="age"
-                  disabled
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-
             </div>
-                        <div className="sm:col-span-5">
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Requesting Physician
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Source of Specimen
               </label>
               <div className="mt-2">
                 <input
-                  id="age"
-                  name="age"
-                  type="age"
-                  autoComplete="age"
-                  disabled
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
+
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Culture Isolate
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
 
-            <div className={toggle === 3 ? "show-content" : "content"}>
-                <h1>Gram Stain</h1>
+          </div>
+        </div>
+<div className="border-b border-gray-900/10 pb-12">
+    <div className="text-3xl text-center font-bold">Sensitivity Report</div>
+    <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
+                    <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Sensitive
+              </label>
+              <div className="mt-2">
+                               <textarea
+                  id="about"
+                  name="about"
+                  rows={15}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  defaultValue={''}
+                />
+              </div>
+            </div>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Resistant
+              </label>
+              <div className="mt-2">
+                               <textarea
+                  id="about"
+                  name="about"
+                  rows={15}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  defaultValue={''}
+                />
+              </div>
+            </div>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Intermediate
+              </label>
+              <div className="mt-2">
+                                <textarea
+                  id="about"
+                  name="about"
+                  rows={15}
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  defaultValue={''}
+                />
+              </div>
+            </div>
+    </div>
+</div>
+
+<div className="border-b border-gray-900/10 pb-12">
+    <div className="text-3xl font-bold">Gram Stain</div>
+
+ <div className="border-b border-gray-900/10 pb-12">
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+            <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Laboratory Number
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
 
-            <div className={toggle === 4 ? "show-content" : "content"}>
-                <h1>AFB Stain</h1>
+                        <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Specimen
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
 
-            <div className={toggle === 5 ? "show-content" : "content"}>
-                <h1>KOH</h1>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Epithelial Cells
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                POLYMORPHONUCLEARS
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Remarks
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
 
           </div>
         </div>
 
-{/* end */}
+</div>
+<div className="border-b border-gray-900/10 pb-12">
+    <div className="text-3xl font-bold">AFB Stain</div>
+
+ <div className="border-b border-gray-900/10 pb-12">
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+            <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Laboratory Number
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+                        <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Specimen
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Remarks
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+<div className="border-b border-gray-900/10 pb-12">
+    <div className="text-3xl font-bold">KOH</div>
+
+ <div className="border-b border-gray-900/10 pb-12">
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+            <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Laboratory Number
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+                        <div className="sm:col-span-1 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Specimen
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-xl font-medium leading-6 text-gray-900">
+                Remarks
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+
+
+        <div className="border-b border-gray-900/10 pb-12">
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Performed By:
+              </label>
+            </div>
+                <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Verified By:
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    {/* blank */}
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist prepared by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist verified by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of Pathologist
+              </label>
+            </div>
+
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                    Medical Technologist
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    Medical Technologist
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Anatomic and Clinic Pathologist
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+
+                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                                    <Tbutton>Add</Tbutton>
+                            </div>
+                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                                    <Tbutton>Print</Tbutton>
+                            </div>
                     </div>
                 </div>
             </form>

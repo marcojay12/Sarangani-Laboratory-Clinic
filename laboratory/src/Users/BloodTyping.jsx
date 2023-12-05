@@ -259,7 +259,7 @@ export default function BloodTyping() {
         </div>
 
 
-        <div className="border-b border-gray-900/10 pb-12">
+         <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
 
              <div className="sm:col-span-2 " >
@@ -275,7 +275,56 @@ export default function BloodTyping() {
 
              <div className="sm:col-span-2 " >
               <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
-                Pathologist
+                                    {/* blank */}
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist prepared by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist verified by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of Pathologist
+              </label>
+            </div>
+
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                    Medical Technologist
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    Medical Technologist
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Anatomic and Clinic Pathologist
               </label>
             </div>
 

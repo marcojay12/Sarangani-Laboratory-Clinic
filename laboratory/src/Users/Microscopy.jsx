@@ -228,42 +228,112 @@ export default function Microscopy() {
 
 
 {/* Blood Typing */}
-                           <div className="border-b border-gray-900/10 pb-12">
-                            <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
 
-                                <div className="sm:col-span-1 " >
+         <div className="border-b border-gray-900/10 pb-12">
+                <div className="text-3xl text-center font-bold">Pregnancy Test Result</div>
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
 
-                                     <h2 className="text-2xl text-center font-semibold leading-7 text-gray-900">Clical Microscopy</h2>
-                                </div>
+             <div className="sm:col-span-4 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Specimen
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
 
-                                    <Tab active={1}>
-                                        {
-                                           // tabContent.map((tab,idx) => <Tab.TabPanel key={`Tab-${idx}`} tab={tab.content}>{}</Tab.TabPanel>)
+                         <div className="sm:col-span-4 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+             <div className="sm:col-span-8 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Remarks
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
 
 
+         <div className="border-b border-gray-900/10 pb-12">
+                <div className="text-3xl text-center font-bold">Urine Examination Result</div>
+        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
+
+             <div className="sm:col-span-4 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Microscopy
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+                         <div className="sm:col-span-4 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Result
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+             <div className="sm:col-span-8 " >
+              <label htmlFor="first-name" className="block text-2xl font-medium leading-6 text-gray-900">
+                Remarks
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
 
 
-
-
-
-
-
-
-
-
-
-                                        }
-                                    </Tab>
-
-
-
-                            </div>
-                           </div>
-
-
-
-
-        <div className="border-b border-gray-900/10 pb-12">
+       <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-6">
 
              <div className="sm:col-span-2 " >
@@ -279,7 +349,56 @@ export default function Microscopy() {
 
              <div className="sm:col-span-2 " >
               <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
-                Pathologist
+                                    {/* blank */}
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist prepared by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of medical Technologist verified by
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-sm leading-6 text-gray-900">
+                Name of Pathologist
+              </label>
+            </div>
+
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+                       <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-bold leading-6 text-gray-900">
+                License No.:
+              </label>
+            </div>
+
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                    Medical Technologist
+              </label>
+            </div>
+            <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                                    Medical Technologist
+              </label>
+            </div>
+
+             <div className="sm:col-span-2 " >
+              <label htmlFor="first-name" className="block text-md font-medium leading-6 text-gray-900">
+                Anatomic and Clinic Pathologist
               </label>
             </div>
 
