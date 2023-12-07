@@ -225,6 +225,7 @@ export default function CrossMatching() {
 
 {/* Blood Typing */}
                         <div className="border-b border-gray-900/10 pb-12">
+                            <div className="text-3xl text-center font-bold">Cross Matching Examination</div>
                         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
                               <div className="sm:col-span-1">
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -232,11 +233,11 @@ export default function CrossMatching() {
               </label>
               <div className="mt-2">
                 <input
-                  id="age"
-                  name="age"
-                  type="age"
-                  autoComplete="age"
-                  placeholder="Blood Type"
+                  id="blood-type"
+                  name="blood_type"
+                  type="text"
+
+                  placeholder="Ex: Type O"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -249,11 +250,10 @@ export default function CrossMatching() {
               </label>
               <div className="mt-2">
                 <input
-                  id="age"
-                  name="age"
-                  type="age"
-                  autoComplete="age"
-                  placeholder="Method"
+                  id="method-test"
+                  name="method_test"
+                  type="test"
+                  placeholder="Ex: Saliva Extraction"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -263,59 +263,137 @@ export default function CrossMatching() {
                         </div>
                         </div>
 
-          <div className="border-b border-gray-900/10 pb-12">
-        <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-1">
-        <table class="border-collapse border border-slate-400 ...">
-  <thead>
-    <tr>
-      <th class="border border-slate-300 ...">Serial Number</th>
-      <th class="border border-slate-300 ...">Donor`s BloodType</th>
-      <th class="border border-slate-300 ...">Source</th>
-      <th class="border border-slate-300 ...">Component</th>
-      <th class="border border-slate-300 ...">Content</th>
-      <th class="border border-slate-300 ...">Extract Date</th>
-      <th class="border border-slate-300 ...">Expiry Date</th>
-      <th class="border border-slate-300 ...">Crossmatching Result</th>
-    </tr>
-  </thead>
-  <tbody className="text-center">
-    <tr>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
-      <td class="border border-slate-300 ...">sample</td>
 
-    </tr>
 
-  </tbody>
-</table>
-          </div>
-                             <div className="sm:col-span-8 " >
-                    <h2 className="text-lg font-bold leading-7 text-gray-900">Others</h2>
+        <div className="border-b border-gray-900/10 pb-12">
+            <div className="mt-8 grid border gap-4 sm:grid-cols-8">
+            <div className="grid grid-col-1 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Serial Number</h2>
+            </div>
+                         <div className="mt-2">
+                <input
+                  id="serial_number"
+                  name="serial_number"
+                  type="text"
+                  placeholder="Ex: 123456789"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    disabled
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Donor's Blood Type</h2>
+            </div>
               <div className="mt-2">
                 <input
+                  id="donor-blood-type"
+                  name="donor_blood_type"
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  placeholder="Others"
+
+                  placeholder="Ex. Type O"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
-                               <div className="sm:col-span-8 " >
-                    <h2 className="text-lg font-bold leading-7 text-gray-900">Remarks</h2>
-              <div className="mt-2">
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Source</h2>
+            </div>
+                          <div className="mt-2">
                 <input
+                  id="source"
+                  name="source"
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  placeholder="Remarks"
+                  placeholder="Ex. Saliva"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Component</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="component"
+                  name="component"
+                  type="text"
+                  placeholder="Component"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Content</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="content"
+                  name="content"
+                  type="text"
+                  placeholder="Content"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Extract Date</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="extract-date"
+                  name="extract_date"
+                  type="date"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Expiry Date</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="expiry-date"
+                  name="expiry_date"
+                  type="date"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+                        <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Crossmatching Result</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="crossmatching-result"
+                  name="crossmatching_result"
+                  type="text"
+                  placeholder="Positive/Negative"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            </div>
+
+
+        </div>
+        <div className="border-b border-gray-900/10 pb-12">
+             <div className="grid grid-col-2 gap-2">
+            <div className="sm:col-span-1 " >
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Others</h2>
+            </div>
+                          <div className="mt-2">
+                <input
+                  id="others"
+                  name="others"
+                  type="test"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>

@@ -10,6 +10,6 @@ class Hematology extends Model
     use HasFactory;
 
     public function hemato(){
-        return $this->hasOne(Hematology::class, 'hematologies_id', 'id');
+        return $this->hasMany(Hematology::class, 'hematologies_id', 'id');
     }
 }

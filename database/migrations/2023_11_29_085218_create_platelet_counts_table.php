@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('platelet_counts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('hematologies_id')->references('id')->on('hematologies')->onDelete('cascade');
+            $table->string('platelet_count');
             $table->string('clotting_time');
             $table->string('bleeding_time');
             $table->timestamps();

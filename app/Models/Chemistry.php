@@ -9,6 +9,6 @@ class Chemistry extends Model
 {
     use HasFactory;
     public function chemist(){
-        return $this->hasOne(Chemistry::class, 'chemistries_id', 'id');
+        return $this->hasMany(Chemistry::class, 'chemistries_id', 'id');
     }
 }

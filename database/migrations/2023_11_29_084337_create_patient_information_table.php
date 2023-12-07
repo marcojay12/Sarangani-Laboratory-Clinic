@@ -21,16 +21,19 @@ return new class extends Migration
             $table->time('time_recieved');
             $table->date('date_released');
             $table->time('time_released');
-            $table->string('fullname');
+            $table->string('surname');
+            $table->string('firstname');
+            $table->string('middlename');
+            $table->string('suffix');
             $table->integer('age');
             $table->enum('gender', [
                 'male',
                 'female'
             ]);
-            $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
-            $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
+           // $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
+           // $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
             $table->text('address');
-            $table->foreignId('physicians_id')->references('id')->on('physicians')->onDelete('cascade');
+            //$table->foreignId('physicians_id')->references('id')->on('physicians')->onDelete('cascade');
             $table->string('ward');
             $table->string('bed_number');
             $table->timestamps();

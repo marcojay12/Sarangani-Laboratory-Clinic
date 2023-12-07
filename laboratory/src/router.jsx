@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Navigate to='/' />
+                element: <Navigate to='/employee' />
             },
             {
                 path: '/employee',
@@ -80,66 +80,66 @@ const router = createBrowserRouter([
                 element: <Serology />
             }
         ]
-    },
-    {
-        path:'/',
-        element: <UserLayout />,
-        children: [
-            {
-                path: 'login',
-                element: <AdminLogin />
-            }
-        ]
-    },
+    }
+    // {
+    //     path:'/',
+    //     element: <UserLayout />,
+    //     children: [
+    //         {
+    //             path: 'login',
+    //             element: <AdminLogin />
+    //         }
+    //     ]
+    // },
     // admin
-    {
-        path: '/',
-        element: <Defaultlayout />,
-        children: [
-            {
-                path: '/admin',
-                element: <AdminDashboard />
-            },
-            {
-                path: '/doctor',
-                element: <DoctorsInformation />
-            },
-            {
-                path: '/doctor/new',
-                element: <DoctorNew />
-            },
-            {
-                path: '/medical_technologist',
-                element: <MTInformation />
-            },
-            {
-                path: '/pathologist',
-                element: <PathologistInformation />
-            },
-            {
-                path: '/patients',
-                element: <PatientInformation />
-            },
-            {
-                path: '/user',
-                element: <UserInformation />
-            }
-        ]
-    },
-    {
-        path:'/',
-        element: <AdminLayout />,
-        children: [
-            {
-                path: 'login',
-                element: <AdminLogin />
-            },
-            {
-                path: 'signup',
-                element: <AdminSignup />
-            }
-        ]
-    },
+    // {
+    //     path: '/',
+    //     element: <Defaultlayout />,
+    //     children: [
+    //         {
+    //             path: '/admin',
+    //             element: <AdminDashboard />
+    //         },
+    //         {
+    //             path: '/doctor',
+    //             element: <DoctorsInformation />
+    //         },
+    //         {
+    //             path: '/doctor/new',
+    //             element: <DoctorNew />
+    //         },
+    //         {
+    //             path: '/medical_technologist',
+    //             element: <MTInformation />
+    //         },
+    //         {
+    //             path: '/pathologist',
+    //             element: <PathologistInformation />
+    //         },
+    //         {
+    //             path: '/patients',
+    //             element: <PatientInformation />
+    //         },
+    //         {
+    //             path: '/user',
+    //             element: <UserInformation />
+    //         }
+    //     ]
+    // },
+    // {
+    //     path:'/',
+    //     element: <AdminLayout />,
+    //     children: [
+    //         {
+    //             path: 'login',
+    //             element: <AdminLogin />
+    //         },
+    //         {
+    //             path: 'signup',
+    //             element: <AdminSignup />
+    //         }
+    //     ]
+    // },
 
 
 

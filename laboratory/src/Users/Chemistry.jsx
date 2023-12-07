@@ -221,15 +221,14 @@ export default function Chemistry() {
           <div className="border-b border-gray-900/10 pb-12">
         <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-4 sm:grid-cols-8">
             <div className="sm:col-span-2">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="laboratory-code" className="block text-sm font-medium leading-6 text-gray-900">
                 Laboratory No.
               </label>
               <div className="mt-2">
                 <input
                   type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
+                  name="laboratory_code"
+                  id="laboratory-code"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -237,29 +236,27 @@ export default function Chemistry() {
 
 
             <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="speciment" className="block text-sm font-medium leading-6 text-gray-900">
                 Specimen Type
               </label>
               <div className="mt-2">
                 <input
                   type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
+                  name="speciment_type"
+                  id="speciment"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
                         <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="source-specimen" className="block text-sm font-medium leading-6 text-gray-900">
                 Source of Specimen
               </label>
               <div className="mt-2">
                 <input
                   type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
+                  name="source_of_specimen"
+                  id="source-specimen"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -268,13 +265,13 @@ export default function Chemistry() {
           </div>
         </div>
             <div className="sm:col-span-8 " >
-              <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
+              <label htmlFor="result" className="block text-2xl text-center font-medium leading-6 text-gray-900">
                 RESULT
               </label>
               <div className="mt-2">
                 <textarea
-                  id="about"
-                  name="about"
+                  id="result"
+                  name="result"
                   rows={3}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={''}
@@ -286,9 +283,8 @@ export default function Chemistry() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  name="remarks"
+                  id="remarks"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
@@ -334,9 +330,8 @@ export default function Chemistry() {
                                  <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="fbs"
+                                id="fbs"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -348,9 +343,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="rbs"
+                                id="rbs"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -362,9 +356,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="creatinine"
+                                id="creatinine"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -376,9 +369,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="uric_acid"
+                                id="uric-acid"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -390,9 +383,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="sgot"
+                                id="sgot"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -404,9 +397,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="sgpt"
+                                id="sgpt"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -418,9 +411,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="alkaline_phos"
+                                id="alkaline-phos"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -432,9 +425,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="ldh"
+                                id="ldh"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -446,9 +439,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="ggt"
+                                id="ggt"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -460,9 +452,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="magnesium"
+                                id="magnesium"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -474,9 +466,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="phosphorus"
+                                id="phosphorus"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -488,9 +480,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="amylase"
+                                id="amylase"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -569,9 +561,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="sodium"
+                                id="sodium"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -583,9 +575,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="potassium"
+                                id="potassium"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -597,9 +589,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="calcium_total"
+                                id="calcium-total"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -611,9 +603,9 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="calcium_ionized"
+                                id="calcium-ionized"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -625,9 +617,23 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="ph"
+                                id="ph"
+
+                                placeholder="Result"
+                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 />
+                             </div>
+                        </div>
+             </div>
+             <div>
+                        <div className="sm:col-span-2">
+                            <div className="mt">
+                                <input
+                                type="text"
+                                name="chloride"
+                                id="chloride"
+
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -641,8 +647,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="total_bilirubin"
+                                id="total-bilirubin"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -656,8 +662,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="direct_bilirubin"
+                                id="direct-bilirubin"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -670,9 +676,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="indirect-bilirubin"
+                                id="indirect-bilirubin"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -735,7 +740,6 @@ export default function Chemistry() {
                         <div>Triglyceride</div>
                         <div>HDL</div>
                         <div>LDL</div>
-                        <div>SGOT</div>
                         <div class="text-md font-semibold">HbA1C</div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -748,8 +752,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="cholesterol"
+                                id="cholesterol"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -762,8 +766,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="trygleceride"
+                                id="trygleceride"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -776,8 +780,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="hdl"
+                                id="hdl"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -790,8 +794,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="ldl"
+                                id="ldl"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -804,8 +808,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="hbac"
+                                id="hbac"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -813,20 +817,7 @@ export default function Chemistry() {
                              </div>
                         </div>
              </div>
-                         <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
+
 
 
 
@@ -839,20 +830,18 @@ export default function Chemistry() {
                         <div>mg/dL</div>
                         <div>mg/dL</div>
                         <div>mg/dL</div>
-                        <div>U/L</div>
-                        <div>U/L</div>
+                        <div>%</div>
 
             </div>
                         <div className="grid grid-col-2 gap-2">
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
             </div>
-                        <div>70-110</div>
-                        <div><br /></div>
-                        <div>0.6-1.3</div>
-                        <div>2.6-7.2</div>
-                        <div>{'<'} 40</div>
-                        <div>10-40</div>
+                        <div>0-200</div>
+                        <div>0-150</div>
+                        <div>{'> 60'}</div>
+                        <div>0-150</div>
+                        <div>4.0-5.7</div>
 
 
             </div>
@@ -885,8 +874,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="total_protein"
+                                id="total-protein"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -900,8 +889,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="albumin"
+                                id="albumin"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -916,8 +905,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="globulin"
+                                id="globulin"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -930,8 +919,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="ag_ratio"
+                                id="ag-ration"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -981,14 +970,14 @@ export default function Chemistry() {
             <div className="grid grid-col-2 gap-2">
 
             <div className="sm:col-span-1 " >
-            <h2 className="text-lg font-bold leading-7 text-gray-900">24 Hours</h2>
+            <h2 className="text-lg font-bold leading-7 text-gray-900">Urine Creatinine</h2>
             </div>
-                        <div>Cholesterol</div>
-                        <div>Triglyceride</div>
-                        <div>HDL</div>
-                        <div>LDL</div>
-                        <div>SGOT</div>
-                        <div class="text-md font-semibold">HbA1C</div>
+                        <div>24 Hours urine Volumn</div>
+                        <div>Serum Creatinine</div>
+                        <div>Urine Creatinine</div>
+                        <div>24 Hours Urine Creatinine</div>
+                        <div>Creatinine Clearance</div>
+                        <div><br /></div>
             </div>
                         <div className="grid grid-col-2 gap-2">
                                         <div className="sm:col-span-1 " >
@@ -1000,8 +989,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="urine_volume"
+                                id="urine-volume"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1014,8 +1003,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="serum_creatinine"
+                                id="serum-creatinine"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1028,8 +1017,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="urine_creatinine"
+                                id="urine-creatinine"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1042,8 +1031,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="hours_urine_creatinine"
+                                id="urine-creatinine"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1056,8 +1045,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="creatinine_clearance"
+                                id="creatinine-clearance"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1065,20 +1054,8 @@ export default function Chemistry() {
                              </div>
                         </div>
              </div>
-                         <div>
-                        <div className="sm:col-span-2">
-                            <div className="mt">
-                                <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
-                                placeholder="Result"
-                                className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
-                             </div>
-                        </div>
-             </div>
+             <div><br /></div>
+
 
 
 
@@ -1087,24 +1064,25 @@ export default function Chemistry() {
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Unit</h2>
             </div>
+                        <div>mL</div>
                         <div>mg/dL</div>
                         <div>mg/dL</div>
-                        <div>mg/dL</div>
-                        <div>mg/dL</div>
+                        <div>mg</div>
+                        <div>mL/min</div>
                         <div>U/L</div>
-                        <div>U/L</div>
+                        <div><br /></div>
 
             </div>
-                        <div className="grid grid-col-2 gap-2">
+                        <div className="grid grid-col-2 gap-4">
                                         <div className="sm:col-span-1 " >
             <h2 className="text-lg font-bold leading-7 text-gray-900">Reference Range</h2>
             </div>
-                        <div>70-110</div>
                         <div><br /></div>
-                        <div>0.6-1.3</div>
-                        <div>2.6-7.2</div>
-                        <div>{'<'} 40</div>
-                        <div>10-40</div>
+                        <div><br /></div>
+                        <div><br /></div>
+                        <div>1000-1500</div>
+                        <div>M=98-156</div>
+                        <div>F=95-160</div>
 
 
             </div>
@@ -1132,8 +1110,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="urea"
+                                id="urea"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1175,8 +1153,8 @@ export default function Chemistry() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="remarks"
+                  id="remarks"
                   autoComplete="given-name"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1199,9 +1177,9 @@ export default function Chemistry() {
               </label>
               <div className="mt-2">
                 <input
-                  id="age"
-                  name="age"
-                  type="age"
+                  id="glucose-load"
+                  name="glucose_load"
+                  type="text"
                   autoComplete="age"
                   placeholder="Glucose Load"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1237,8 +1215,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="fbs"
+                                id="fbs"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1251,8 +1229,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="first_hour"
+                                id="first-hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1265,8 +1243,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="second_hour"
+                                id="second-hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1279,8 +1257,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="third_hour"
+                                id="third_hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1333,8 +1311,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="fasting"
+                                id="fasting"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1347,8 +1325,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="first_hour"
+                                id="first-hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1361,8 +1339,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="second_hour"
+                                id="second-hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1375,8 +1353,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="third_hour"
+                                id="third-hour"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1425,8 +1403,8 @@ export default function Chemistry() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
+                                name="glucose_result"
+                                id="glucose-result"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -1461,8 +1439,8 @@ export default function Chemistry() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
+                  name="remarks"
+                  id="remarks"
                   autoComplete="given-name"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"

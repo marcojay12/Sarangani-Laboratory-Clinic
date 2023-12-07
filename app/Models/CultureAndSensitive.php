@@ -9,7 +9,7 @@ class CultureAndSensitive extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'laboratory_codes_id',
+        'lab_number',
         'speciment_type',
         'source_of_speciment',
         'result',

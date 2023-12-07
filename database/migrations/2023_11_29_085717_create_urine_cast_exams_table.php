@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('wbc_cast');
             $table->string('rbc_cast');
             $table->string('granular_cast');
+            $table->string('pregnancy_test');
+            $table->string('remarks');
             $table->timestamps();
         });
     }

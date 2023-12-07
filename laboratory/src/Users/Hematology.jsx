@@ -254,9 +254,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="hemoglobin"
+                                id="hemoglobin"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -268,9 +267,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="hematocrit"
+                                id="hematocrit"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -282,9 +280,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="rbc_count"
+                                id="rbc-count"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -296,9 +293,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="wbc_count"
+                                id="wbc-count"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -353,9 +349,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="neutrophils"
+                                id="neutrophils"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -367,9 +362,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="lymphocytes"
+                                id="lumpocytes"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -381,9 +375,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="monocytes"
+                                id="monocytes"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -395,9 +388,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="eosinophils"
+                                id="eosinophils"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -409,9 +401,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="basophils"
+                                id="basophils"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -471,9 +462,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="mcv"
+                                id="mcv"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -485,9 +475,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="mch"
+                                id="mch"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -499,9 +488,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="mchc"
+                                id="mchc"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -554,9 +542,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="platelet_count"
+                                id="platelet-count"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -567,10 +554,9 @@ export default function Hematology() {
                         <div className="sm:col-span-2 ">
                             <div className="mt">
                                 <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                type="time"
+                                name="clotting_time"
+                                id="clotting-time"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -581,10 +567,9 @@ export default function Hematology() {
                         <div className="sm:col-span-2 ">
                             <div className="mt">
                                 <input
-                                type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                type="time"
+                                name="bleeding_time"
+                                id="bleeding_time"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -640,9 +625,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="erythrocyte"
+                                id="erythrocyte"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -692,9 +676,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="reticulocyte"
+                                id="reticulocyte"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -734,16 +717,15 @@ export default function Hematology() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  name="remarks"
+                  id="remarks"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
 
-
+                <div className="border-b border-gray-900/10 pb-12"></div>
             <div className="sm:col-span-1 " >
             <h2 className="text-2xl text-center font-bold leading-7 text-gray-900">Coagulation Studies</h2>
             </div>
@@ -781,9 +763,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="pt"
+                                id="pt"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -795,9 +776,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="control"
+                                id="control"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -809,9 +789,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="activity"
+                                id="activity"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -853,6 +832,7 @@ export default function Hematology() {
                         <div className="text-sm font-semibold">PTT</div>
                         <div className="text-sm font-semibold">Control</div>
                         <div className="text-sm font-semibold">Ratio</div>
+                        <div><br/></div>
 
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -865,9 +845,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="ptt"
+                                id="ptt"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -879,9 +858,8 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="control"
+                                id="control"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
@@ -893,15 +871,15 @@ export default function Hematology() {
                             <div className="mt">
                                 <input
                                 type="text"
-                                name="last-name"
-                                id="last-name"
-                                autoComplete="family-name"
+                                name="ratio"
+                                id="ratio"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                  />
                              </div>
                         </div>
              </div>
+             <div><br/></div>
             </div>
                         <div className="grid grid-col-2 gap-2">
                                         <div className="sm:col-span-1 " >
@@ -910,6 +888,7 @@ export default function Hematology() {
 
                         <div>Seconds</div>
                         <div>Seconds</div>
+                        <div><br/></div>
                         <div><br/></div>
 
 
@@ -925,6 +904,7 @@ export default function Hematology() {
                         <div><br/></div>
                         <div>30.5-45.8</div>
                         <div>Up to 1.20</div>
+                        <div><br/></div>
             </div>
 
 
@@ -937,9 +917,8 @@ export default function Hematology() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  name="remarks"
+                  id="remarks"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />

@@ -10,6 +10,6 @@ class BloodTyping extends Model
     use HasFactory;
 
     public function bloodtypes(){
-        return $this->hasOne(BloodTyping::class, 'blood_typings_id', 'id');
+        return $this->hasMany(BloodTyping::class, 'blood_typings_id', 'id');
     }
 }

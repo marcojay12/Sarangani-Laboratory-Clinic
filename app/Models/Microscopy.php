@@ -9,6 +9,6 @@ class Microscopy extends Model
 {
     use HasFactory;
     public function microscope(){
-        return $this->hasOne(Microscopy::class, 'microscopies_id', 'id');
+        return $this->hasMany(Microscopy::class, 'microscopies_id', 'id');
     }
 }

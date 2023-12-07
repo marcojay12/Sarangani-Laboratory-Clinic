@@ -18,7 +18,8 @@ return new class extends Migration
             $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
             $table->string('sodium');
             $table->string('potassium');
-            $table->string('calcium');
+            $table->string('calcium_total');
+            $table->string('calcium_ionized');
             $table->string('ph');
             $table->string('chloride');
             $table->timestamps();
