@@ -35,6 +35,16 @@ class CultureAndSensitiveController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lab_number" => 'nullable',
+            "speciment_type" => 'nullable',
+            "source_of_speciment" => 'nullable',
+            "result" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $culture = new CultureAndSensitive($validate);
+        $culture->save();
+        return response()->json('Done');
     }
 
     /**

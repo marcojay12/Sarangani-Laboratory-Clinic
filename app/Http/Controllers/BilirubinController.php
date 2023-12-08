@@ -33,6 +33,14 @@ class BilirubinController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "total_bilirubin" => 'nullable',
+            "direct_bilirubin" => 'nullable',
+            "indirect_bilirubin" => 'nullable'
+        ]);
+        $bilirubin = new Bilirubin($validate);
+        $bilirubin->save();
+        return response()->json('Done');
     }
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Electrolytes;
 use App\Models\ErythrocyteSedimentation;
 use Illuminate\Http\Request;
 
@@ -31,6 +32,12 @@ class ErythrocyteSedimentationController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            'erythrocyte' => 'nullable'
+        ]);
+        $sendimintation = new ErythrocyteSedimentation ($validate);
+        $sendimintation->save();
+        return response()->json('Done');
     }
 
     /**

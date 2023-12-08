@@ -33,6 +33,13 @@ class ChemistryExamOralGlucosController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "glucose_load" => 'nullable',
+            "glucose_result" => 'nullable'
+        ]);
+        $chem_oral_glucos = new ChemistryExamOralGlucos($validate);
+        $chem_oral_glucos->save();
+        return response()->json('Done');
     }
 
     /**

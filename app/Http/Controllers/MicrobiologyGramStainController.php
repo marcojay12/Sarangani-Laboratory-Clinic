@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MicrobiologyGramStain;
+use App\Models\MicrobiologyKOHS;
 use Illuminate\Http\Request;
 
 class MicrobiologyGramStainController extends Controller
@@ -36,6 +37,17 @@ class MicrobiologyGramStainController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lab_number" => 'nullable',
+            "specimen" => 'nullable',
+            "result" => 'nullable',
+            "epithelial_cell" => 'nullable',
+            "polymorphonuclears" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $microbiology_kohs = new MicrobiologyKOHS($validate);
+        $microbiology_kohs->save();
+        return response()->json('Done');
     }
 
     /**

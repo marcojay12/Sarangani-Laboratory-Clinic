@@ -32,6 +32,13 @@ class FecalysisMacroscopicExamController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "color" => 'nullable',
+            "consistency" => 'nullable'
+        ]);
+        $fecal_macro = new FecalysisMacroscopicExam($validate);
+        $fecal_macro->save();
+        return response()->json('Done');
     }
 
     /**

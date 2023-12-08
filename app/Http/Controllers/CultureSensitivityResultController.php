@@ -35,6 +35,16 @@ class CultureSensitivityResultController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lab_number" => 'nullable',
+            "specimen_type" => 'nullable',
+            "source_of_specimen" => 'nullable',
+            "monocytes" => 'nullable',
+            "eosinophils" => 'nullable'
+        ]);
+        $sensitive = new CultureSensitivityResult($validate);
+        $sensitive->save();
+        return response()->json('Done');
     }
 
     /**

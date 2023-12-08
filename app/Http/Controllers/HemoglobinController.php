@@ -31,6 +31,12 @@ class HemoglobinController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "'hba1c'" => 'nullable'
+        ]);
+        $hemoglobin = new Hemoglobin($validate);
+        $hemoglobin->save();
+        return response()->json('Done');
     }
 
     /**

@@ -37,8 +37,8 @@ class BloodTypeExamController extends Controller
             "blood_typing" => 'nullable',
             "remarks" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $blood_type_exam = new BloodTypeExam($validate);
+        $blood_type_exam->save();
         return response()->json('Done');
     }
 

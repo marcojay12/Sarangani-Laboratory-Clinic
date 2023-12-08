@@ -34,6 +34,15 @@ class FecalysisMicroscopicExamController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "rbc" => 'nullable',
+            "wbc" => 'nullable',
+            "fat_globules" => 'nullable',
+            "yeast_cells" => 'nullable',
+        ]);
+        $fecal_micro = new FecalysisMicroscopicExam($validate);
+        $fecal_micro->save();
+        return response()->json('Done');
     }
 
     /**

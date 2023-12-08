@@ -36,6 +36,17 @@ class CovidRapidTestController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "type_of_specimen" => 'nullable',
+            "test_kit_brand" => 'nullable',
+            "method_test" => 'nullable',
+            "result" => 'nullable',
+            "value_test" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $covid = new CovidRapidTest($validate);
+        $covid->save();
+        return response()->json('Done');
     }
 
     /**

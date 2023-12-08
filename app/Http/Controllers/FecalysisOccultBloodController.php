@@ -31,6 +31,12 @@ class FecalysisOccultBloodController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "fecal_occult_blood" => 'nullable'
+        ]);
+        $fecal_occult = new FecalysisOccultBlood($validate);
+        $fecal_occult->save();
+        return response()->json('Done');
     }
 
     /**

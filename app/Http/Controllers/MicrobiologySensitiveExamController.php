@@ -33,6 +33,14 @@ class MicrobiologySensitiveExamController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "sensitive" => 'nullable',
+            "resistant" => 'nullable',
+            "intermediate" => 'nullable'
+        ]);
+        $microbiology_sensitive = new MicrobiologySensitiveExam($validate);
+        $microbiology_sensitive->save();
+        return response()->json('Done');
     }
 
     /**

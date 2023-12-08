@@ -35,6 +35,16 @@ class DifferentialCountController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "neutrophils" => 'nullable',
+            "lymphocytes" => 'nullable',
+            "monocytes"   => 'nullable',
+            "eosinophils" => 'nullable',
+            "basophils"   => 'nullable',
+        ]);
+        $differential = new DifferentialCount($validate);
+        $differential->save();
+        return response()->json('Done');
     }
 
     /**

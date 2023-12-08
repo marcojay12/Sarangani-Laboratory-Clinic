@@ -34,6 +34,15 @@ class MicrobiologyKOHSController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lab_number" => 'nullable',
+            "specimen" => 'nullable',
+            "result" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $micro_kohs = new MicrobiologyKOHS($validate);
+        $micro_kohs->save();
+        return response()->json('Done');
     }
 
     /**

@@ -32,6 +32,13 @@ class MedicalTechnologyController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "mt_name" => 'nullable',
+            "mt_license_number" => 'nullable'
+        ]);
+        $med_tech = new MedicalTechnology($validate);
+        $med_tech->save();
+        return response()->json('Done');
     }
 
     /**

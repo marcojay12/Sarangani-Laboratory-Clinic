@@ -34,6 +34,15 @@ class MicrobiologyAfbStainController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lab_number" => 'nullable',
+            "specimen" => 'nullable',
+            "result" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $microbiology_afb = new MicrobiologyAfbStain($validate);
+        $microbiology_afb->save();
+        return response()->json('Done');
     }
 
     /**

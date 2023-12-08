@@ -34,6 +34,15 @@ class CoagulationStudiesProtimeController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "pt" => 'nullable',
+            "control" => 'nullable',
+            "activity" => 'nullable',
+            "inr" => 'nullable'
+        ]);
+        $coagulation_protime = new CoagulationStudiesProtime($validate);
+        $coagulation_protime->save();
+        return response()->json('Done');
     }
 
     /**

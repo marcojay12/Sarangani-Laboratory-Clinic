@@ -34,6 +34,15 @@ class CompleteBloodCountController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "hemoglobin" => 'nullable',
+            "hematocrit" => 'nullable',
+            "rbc_count" => 'nullable',
+            "wbc_count" => 'nullable'
+        ]);
+        $complete_blood_count = new CompleteBloodCount($validate);
+        $complete_blood_count->save();
+        return response()->json('Done');
     }
 
     /**

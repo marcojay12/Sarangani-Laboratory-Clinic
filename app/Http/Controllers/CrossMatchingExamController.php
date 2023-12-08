@@ -41,6 +41,22 @@ class CrossMatchingExamController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "blood_type" => 'nullable',
+            "method_test" => 'nullable',
+            "serial_number" => 'nullable',
+            "donor_blood_type" => 'nullable',
+            "source" => 'nullable',
+            "component" => 'nullable',
+            "content" => 'nullable',
+            "extract_date" => 'nullable',
+            "expiry_date" => 'nullable',
+            "crossmatching_result" => 'nullable',
+            "others" => 'nullable'
+        ]);
+        $crossmatch = new CrossMatchingExam($validate);
+        $crossmatch->save();
+        return response()->json('Done');
     }
 
     /**

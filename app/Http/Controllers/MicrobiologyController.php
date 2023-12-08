@@ -35,6 +35,17 @@ class MicrobiologyController extends Controller
     public function store(Request $request)
     {
         //
+        // $validate = $request->validate([
+        //     "lab_number" => 'nullable',
+        //     "specimen" => 'nullable',
+        //     "result" => 'nullable',
+        //     "epithelial_cell" => 'nullable',
+        //     "polymorphonuclears" => 'nullable',
+        //     "remarks" => 'nullable'
+        // ]);
+        // $patient_information = new BloodTypeExam($validate);
+        // $patient_information->save();
+        // return response()->json('Done');
     }
 
     /**

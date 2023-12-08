@@ -34,6 +34,15 @@ class LipidProfileController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "cholesterol" => 'nullable',
+            "triglyceride" => 'nullable',
+            "hdl" => 'nullable',
+            "ldl" => 'nullable'
+        ]);
+        $lipid = new LipidProfile($validate);
+        $lipid->save();
+        return response()->json('Done');
     }
 
     /**

@@ -43,6 +43,24 @@ class ChemistryExamResultController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "fbs" => 'nullable',
+            "rbs" => 'nullable',
+            "creatinine" => 'nullable',
+            "uric_acid" => 'nullable',
+            "sgot" => 'nullable',
+            "sgpt" => 'nullable',
+            "alkaline_phos" => 'nullable',
+            "ldh" => 'nullable',
+            "ggt" => 'nullable',
+            "magnesium" => 'nullable',
+            "phosphorus" => 'nullable',
+            "amylase" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $chemistry_exam_result = new ChemistryExamResult($validate);
+        $chemistry_exam_result->save();
+        return response()->json('Done');
     }
 
     /**

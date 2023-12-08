@@ -32,6 +32,13 @@ class UltraSoundController extends Controller
     public function create()
     {
         //
+        $validate = $request->validate([
+            "blood_typing" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $patient_information = new BloodTypeExam($validate);
+        $patient_information->save();
+        return response()->json('Done');
     }
 
     /**

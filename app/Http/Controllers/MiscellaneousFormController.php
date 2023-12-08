@@ -33,6 +33,14 @@ class MiscellaneousFormController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "test_name" => 'nullable',
+            "result" => 'nullable',
+            "remarks" => 'nullable'
+        ]);
+        $misc_form = new MiscellaneousForm($validate);
+        $misc_form->save();
+        return response()->json('Done');
     }
 
     /**

@@ -34,6 +34,15 @@ class CoagulationStudiesApptsController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "ptt" => 'nullable',
+            "control" => 'nullable',
+            "ratio" => 'nullable'
+
+        ]);
+        $coagulation_appts = new CoagulationStudiesAppts($validate);
+        $coagulation_appts->save();
+        return response()->json('Done');
     }
 
     /**

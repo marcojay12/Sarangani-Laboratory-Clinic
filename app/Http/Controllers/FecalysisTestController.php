@@ -41,6 +41,23 @@ class FecalysisTestController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "lumbricoides_ova" => 'nullable',
+            "trichiura_ova" => 'nullable',
+            "hookworm_ova" => 'nullable',
+            "histolyrica_cyst" => 'nullable',
+            "histolytica_trophozoite" => 'nullable',
+            "entamoeba_coli_cyst" => 'nullable',
+            "entamoeba_coli_trophozoite" => 'nullable',
+            "giardia_lambia_cyst" => 'nullable',
+            "giardia_lambia_trophozoite" => 'nullable',
+            "others" => 'nullable',
+            "remarks" => 'nullable'
+
+        ]);
+        $fecal_test = new FecalysisTest($validate);
+        $fecal_test->save();
+        return response()->json('Done');
     }
 
     /**

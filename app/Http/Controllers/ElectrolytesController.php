@@ -35,6 +35,16 @@ class ElectrolytesController extends Controller
     public function store(Request $request)
     {
         //
+        $validate = $request->validate([
+            "sodium" => 'nullable',
+            "potassium" => 'nullable',
+            "calcium"   => 'nullable',
+            "ph"        => 'nullable',
+            "chloride"  => 'nullable',
+        ]);
+        $electro = new Electrolytes($validate);
+        $electro->save();
+        return response()->json('Done');
     }
 
     /**

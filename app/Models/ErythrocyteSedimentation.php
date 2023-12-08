@@ -12,6 +12,6 @@ class ErythrocyteSedimentation extends Model
         'erythrocyte'
     ];
     public function erythrocyte_sedimentations(){
-        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
+        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
     }
 }
