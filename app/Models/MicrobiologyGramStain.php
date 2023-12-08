@@ -17,6 +17,6 @@ class MicrobiologyGramStain extends Model
         'remarks'
     ];
     public function gram_stain(){
-        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

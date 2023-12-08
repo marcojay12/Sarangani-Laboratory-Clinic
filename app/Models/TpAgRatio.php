@@ -15,6 +15,6 @@ class TpAgRatio extends Model
         'ag_ratio'
     ];
     public function tp_ag(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

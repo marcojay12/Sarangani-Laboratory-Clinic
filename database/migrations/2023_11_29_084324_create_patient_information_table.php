@@ -15,24 +15,24 @@ return new class extends Migration
     {
         Schema::create('patient_information', function (Blueprint $table) {
             $table->id();
-            $table->date('date_printed');
-            $table->time('time_printed');
-            $table->date('date_recieved');
-            $table->time('time_recieved');
-            $table->date('date_released');
-            $table->time('time_released');
+
             $table->string('surname');
             $table->string('firstname');
             $table->string('middlename');
             $table->string('suffix');
-            $table->integer('age');
-            $table->enum('gender', [
-                'male',
-                'female'
-            ]);
-           // $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
-           // $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
-            $table->text('address');
+            $table->string('birthday');
+            $table->string('age');
+            // $table->enum('gender', [
+            //     'male',
+            //     'female'
+            // ]);
+            $table->string('gender');
+            $table->string('hospital_number');
+            $table->string('lab_number');
+            // $table->foreignId('hospital_lists_id')->references('id')->on('hospital_lists')->onDelete('cascade');
+            // $table->foreignId('laboratory_codes_id')->references('id')->on('laboratory_codes')->onDelete('cascade');
+            $table->string('address');
+            $table->string('physician');
             //$table->foreignId('physicians_id')->references('id')->on('physicians')->onDelete('cascade');
             $table->string('ward');
             $table->string('bed_number');

@@ -12,6 +12,6 @@ class FecalysisOccultBlood extends Model
         'fecal_occult_blood'
     ];
     public function fecalysis_occults(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

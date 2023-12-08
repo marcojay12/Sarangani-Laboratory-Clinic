@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('miscellaneous_forms', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('miscellaneouses_id')->references('id')->on('miscellaneouses')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('test_name');
             $table->string('result');
             $table->string('remarks');

@@ -13,6 +13,6 @@ class FecalysisMacroscopicExam extends Model
         'consistency'
     ];
     public function fecalysis_macro_exam(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

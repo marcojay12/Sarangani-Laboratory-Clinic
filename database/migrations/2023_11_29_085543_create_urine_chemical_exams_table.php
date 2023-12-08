@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('urine_chemical_exams', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('reaction');
             $table->string('sp_gravity');
             $table->string('glucose');

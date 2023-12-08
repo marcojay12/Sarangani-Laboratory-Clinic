@@ -17,6 +17,6 @@ class CultureAndSensitive extends Model
     ];
 
     public function chem_culture_sensitive(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

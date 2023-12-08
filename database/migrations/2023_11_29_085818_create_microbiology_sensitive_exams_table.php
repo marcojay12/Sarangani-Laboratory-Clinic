@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('microbiology_sensitive_exams', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('microbiologies_id')->references('id')->on('microbiologies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('sensitive');
             $table->string('resistant');
             $table->string('intermediate');

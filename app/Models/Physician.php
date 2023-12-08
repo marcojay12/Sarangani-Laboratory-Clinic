@@ -13,4 +13,7 @@ class Physician extends Model
         'phd_prt_number',
         'phd_license_number'
     ];
+    public function phd(){
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
+    }
 }

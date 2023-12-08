@@ -15,6 +15,6 @@ class UrineGlucose extends Model
         'third_hour'
     ];
     public function urine_glucose(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

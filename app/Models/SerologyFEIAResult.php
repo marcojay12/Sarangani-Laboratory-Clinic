@@ -16,6 +16,6 @@ class SerologyFEIAResult extends Model
         'remarks'
     ];
     public function feia_result(){
-        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

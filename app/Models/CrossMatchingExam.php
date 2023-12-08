@@ -23,6 +23,6 @@ class CrossMatchingExam extends Model
 
     ];
     public function cross_match_exam(){
-        return $this->belongsTo(CrossMatching::class, 'cross_matchings_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

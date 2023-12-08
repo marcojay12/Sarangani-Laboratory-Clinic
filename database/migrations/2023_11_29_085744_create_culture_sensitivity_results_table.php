@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('culture_sensitivity_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('lab_number');
             $table->string('specimen_type');
             $table->string('source_of_specimen');

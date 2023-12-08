@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('blood_type_exams', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('blood_typings_id')->references('id')->on('blood_typings')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('blood_typing');
             $table->string('remarks');
             $table->timestamps();

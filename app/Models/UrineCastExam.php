@@ -15,6 +15,6 @@ class UrineCastExam extends Model
         'granular_cast'
     ];
     public function urine_cast(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

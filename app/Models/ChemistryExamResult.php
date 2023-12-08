@@ -24,6 +24,6 @@ class ChemistryExamResult extends Model
         'remarks'
     ];
     public function chem_exam_results(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

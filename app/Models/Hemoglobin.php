@@ -12,6 +12,6 @@ class Hemoglobin extends Model
         'hba1c'
     ];
     public function hemoglobins(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

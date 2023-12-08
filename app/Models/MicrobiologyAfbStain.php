@@ -15,7 +15,7 @@ class MicrobiologyAfbStain extends Model
         'remarks'
     ];
     public function afb_stain(){
-        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 
 }

@@ -22,6 +22,7 @@ const navigation = [
   { name: 'Microscopy Test', to: '/microscopy'},
   { name: 'Miscellaneous', to: '/miscellaneous'},
   { name: 'Serology', to: '/serology'},
+    { name: 'Radiology', to: '/radiology'},
 ]
 const userNavigation = [
 //   { name: '', href: '#' },
@@ -36,15 +37,6 @@ function classNames(...classes) {
 export default function UserDefaultlayout() {
     const {currentUser, userToken} = useStateContext();
 
-
-   if (!userToken) {
-    return <Navigate to='login' />
-   }
-
-    const logout = (ev) => {
-        ev.preventDefault();
-        console.log('Logout');
-    }
 
     return (
     <>

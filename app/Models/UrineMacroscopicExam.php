@@ -13,6 +13,6 @@ class UrineMacroscopicExam extends Model
         'transparency'
     ];
     public function urine_macroscopic(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

@@ -227,9 +227,14 @@ export default function Chemistry() {
               <div className="mt-2">
                 <input
                   type="text"
-                  name="laboratory_code"
+                  name="lab_number"
                   id="laboratory-code"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                //                   value={lab_number}
+                //   onChange={(event)=>
+                // {
+                //     setLabNumber(event.target.value);
+                // }}
                 />
               </div>
             </div>
@@ -243,8 +248,13 @@ export default function Chemistry() {
                 <input
                   type="text"
                   name="speciment_type"
-                  id="speciment"
+                  id="specimen-type"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  value={specimen-type}
+                  onChange={(event)=>
+                {
+                    setSpecimenType(event.target.value);
+                }}
                 />
               </div>
             </div>
@@ -258,6 +268,11 @@ export default function Chemistry() {
                   name="source_of_specimen"
                   id="source-specimen"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  value={source-specimen}
+                  onChange={(event)=>
+                {
+                    setSourceSpecimen(event.target.value);
+                }}
                 />
               </div>
             </div>
@@ -270,11 +285,16 @@ export default function Chemistry() {
               </label>
               <div className="mt-2">
                 <textarea
-                  id="result"
+                  id="results"
                   name="result"
                   rows={3}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={''}
+                                    value={results}
+                  onChange={(event)=>
+                {
+                    setResults(event.target.value);
+                }}
                 />
                  </div>
                 </div>
@@ -287,6 +307,11 @@ export default function Chemistry() {
                   id="remarks"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  value={remarks}
+                  onChange={(event)=>
+                {
+                    setRemarks(event.target.value);
+                }}
                 />
               </div>
             </div>
@@ -334,6 +359,12 @@ export default function Chemistry() {
                                 id="fbs"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                   value={fbs}
+                  onChange={(event)=>
+                {
+                    setFbs(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -347,6 +378,11 @@ export default function Chemistry() {
                                 id="rbs"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  value={rbs}
+                  onChange={(event)=>
+                {
+                    setRbs(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -360,7 +396,12 @@ export default function Chemistry() {
                                 id="creatinine"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                                  value={creatinine}
+                  onChange={(event)=>
+                {
+                    setCreatinine(event.target.value);
+                }}
+                                />
                              </div>
                         </div>
              </div>
@@ -374,6 +415,11 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  value={uric-acid}
+                  onChange={(event)=>
+                {
+                    setUricAcid(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -388,7 +434,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                  value={sgot}
+                  onChange={(event)=>
+                {
+                    setSgot(event.target.value);
+                }}
+                                />
                              </div>
                         </div>
              </div>
@@ -402,6 +453,11 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  value={sgpt}
+                  onChange={(event)=>
+                {
+                    setSgpt(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -416,6 +472,11 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                   value={alkaline-phos}
+                  onChange={(event)=>
+                {
+                    setAlkalinePhos(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -430,6 +491,11 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        value={ldh}
+                  onChange={(event)=>
+                {
+                    setLdh(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -443,6 +509,12 @@ export default function Chemistry() {
                                 id="ggt"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={ggt}
+                  onChange={(event)=>
+                {
+                    setGgt(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -457,6 +529,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={magnesium}
+                  onChange={(event)=>
+                {
+                    setMagnesium(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -471,7 +549,13 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                value={phosphorus}
+                  onChange={(event)=>
+                {
+                    setPhosphorus(event.target.value);
+                }}
+
+                                />
                              </div>
                         </div>
              </div>
@@ -485,7 +569,13 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                value={amylase}
+                  onChange={(event)=>
+                {
+                    setAmylase(event.target.value);
+                }}
+
+                                />
                              </div>
                         </div>
              </div>
@@ -566,6 +656,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={sodium}
+                  onChange={(event)=>
+                {
+                    setSodium(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -580,6 +676,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={potassium}
+                  onChange={(event)=>
+                {
+                    setPotassium(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -594,6 +696,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={Calcium-total}
+                  onChange={(event)=>
+                {
+                    setCalciumTotal(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -608,6 +716,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={calcium-ionized}
+                  onChange={(event)=>
+                {
+                    setCalciumIonized(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -622,6 +736,12 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={ph}
+                  onChange={(event)=>
+                {
+                    setPh(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -636,6 +756,11 @@ export default function Chemistry() {
 
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={chloride}
+                  onChange={(event)=>
+                {
+                    setChloride(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -652,7 +777,13 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                value={total-bilirubin}
+                  onChange={(event)=>
+                {
+                    setTotalBilirubin(event.target.value);
+                }}
+
+                                />
                              </div>
                         </div>
              </div>
@@ -667,7 +798,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                value={direct-bilirubin}
+                  onChange={(event)=>
+                {
+                    setDirectBilirubin(event.target.value);
+                }}
+                                />
                              </div>
                         </div>
              </div>
@@ -680,6 +816,11 @@ export default function Chemistry() {
                                 id="indirect-bilirubin"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    value={indirect-bilirubin}
+                  onChange={(event)=>
+                {
+                    setIndirectBilirubin(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -757,6 +898,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    value={cholesterol}
+                  onChange={(event)=>
+                {
+                    setCholesterol(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -771,6 +918,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={tryleceride}
+                  onChange={(event)=>
+                {
+                    setTryleceride(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -785,6 +938,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={hdl}
+                  onChange={(event)=>
+                {
+                    setHdl(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -799,6 +958,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={ldl}
+                  onChange={(event)=>
+                {
+                    setLdl(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -813,6 +978,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={hbac}
+                  onChange={(event)=>
+                {
+                    setHbac(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -879,6 +1050,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={total-protein}
+                  onChange={(event)=>
+                {
+                    setTotalProtein(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -894,6 +1070,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={albumin}
+                  onChange={(event)=>
+                {
+                    setAlbumin(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -910,6 +1092,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={globulin}
+                  onChange={(event)=>
+                {
+                    setGlobulin(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -920,10 +1108,16 @@ export default function Chemistry() {
                                 <input
                                 type="text"
                                 name="ag_ratio"
-                                id="ag-ration"
+                                id="ag-ratio"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={ag-ratio}
+                  onChange={(event)=>
+                {
+                    setAgRatio(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -994,6 +1188,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={urine-volume}
+                  onChange={(event)=>
+                {
+                    setUrineVolume(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1008,6 +1207,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={serum-creatinine}
+                  onChange={(event)=>
+                {
+                    setSerumCreatinine(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1022,6 +1226,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    value={urine-creatinine}
+                  onChange={(event)=>
+                {
+                    setUrineCreatinine(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1032,10 +1241,15 @@ export default function Chemistry() {
                                 <input
                                 type="text"
                                 name="hours_urine_creatinine"
-                                id="urine-creatinine"
+                                id="hours-urine-creatinine"
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={hours-urine-creatinine}
+                  onChange={(event)=>
+                {
+                    setHoursUrineCreatinine(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1050,6 +1264,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={creatinine-clearance}
+                  onChange={(event)=>
+                {
+                    setCreatinineClearance(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1115,6 +1334,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={urea}
+                  onChange={(event)=>
+                {
+                    setUrea(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1158,6 +1382,11 @@ export default function Chemistry() {
                   autoComplete="given-name"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                value={remarks}
+                  onChange={(event)=>
+                {
+                    setRemarks(event.target.value);
+                }}
                 />
               </div>
             </div>
@@ -1183,6 +1412,11 @@ export default function Chemistry() {
                   autoComplete="age"
                   placeholder="Glucose Load"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                value={glucose-load}
+                  onChange={(event)=>
+                {
+                    setGlucoseLoad(event.target.value);
+                }}
                 />
               </div>
             </div>
@@ -1220,6 +1454,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={fbs}
+                  onChange={(event)=>
+                {
+                    setFbs(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1234,6 +1473,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={first-hour}
+                  onChange={(event)=>
+                {
+                    setFirstHour(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1248,7 +1492,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                 />
+                                    value={second-hour}
+                  onChange={(event)=>
+                {
+                    setSecondHour(event.target.value);
+                }}
+                                />
                              </div>
                         </div>
              </div>
@@ -1262,6 +1511,12 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={third-hour}
+                  onChange={(event)=>
+                {
+                    setThirdHour(event.target.value);
+                }}
+
                                  />
                              </div>
                         </div>
@@ -1316,6 +1571,11 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                 value={fasting}
+                  onChange={(event)=>
+                {
+                    setFasting(event.target.value);
+                }}
                                  />
                              </div>
                         </div>
@@ -1330,6 +1590,8 @@ export default function Chemistry() {
                                 autoComplete="family-name"
                                 placeholder="Result"
                                 className="block rounded-md border-0 py-0.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+
+
                                  />
                              </div>
                         </div>

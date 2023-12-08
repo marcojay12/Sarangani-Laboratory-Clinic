@@ -16,6 +16,6 @@ class UrineCreatinine extends Model
         'creatinine_clearance'
     ];
     public function urine_creatinines(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

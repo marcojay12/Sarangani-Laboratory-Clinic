@@ -13,6 +13,6 @@ class BloodTypeExam extends Model
         'remarks'
     ];
     public function bloodtype(){
-        return $this->belongsTo(BloodTyping::class, 'blood_typings_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

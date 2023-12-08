@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('phd_name');
             $table->string('phd_ptr_number');
             $table->string('phd_license_number');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->timestamps();
         });
     }

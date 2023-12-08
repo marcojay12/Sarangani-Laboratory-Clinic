@@ -9,6 +9,6 @@ class Miscellaneous extends Model
 {
     use HasFactory;
     public function misc(){
-        return $this->hasOne(Miscellaneous::class, 'miscellaneouses_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

@@ -14,6 +14,6 @@ class MiscellaneousForm extends Model
         'remarks'
     ];
     public function miscform(){
-        return $this->belongsTo(Miscellaneous::class, 'miscellaneouses_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

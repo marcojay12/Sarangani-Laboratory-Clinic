@@ -9,6 +9,6 @@ class Microbiology extends Model
 {
     use HasFactory;
     public function microbio(){
-        return $this->hasMany(Microbiology::class, 'microbiologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

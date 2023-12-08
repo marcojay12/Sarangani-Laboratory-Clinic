@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class BloodGlucose extends Model
 {
     use HasFactory;
+    protected $table = 'blood_glucoses';
+
     protected $fillable = [
         'fbs',
         'first_hour',
@@ -15,6 +17,6 @@ class BloodGlucose extends Model
         'third_hour'
     ];
     public function bloodglocoses(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

@@ -10,6 +10,6 @@ class CrossMatching extends Model
     use HasFactory;
 
     public function crossmatch(){
-        return $this->hasOne(CrossMatching::class, 'cross_matchings_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

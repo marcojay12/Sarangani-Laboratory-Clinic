@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('serology_f_e_i_a_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('serologies_id')->references('id')->on('serologies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('fluorescence_enzyme');
             $table->string('cardiac_markers');
             $table->string('troponin');

@@ -9,6 +9,6 @@ class Serology extends Model
 {
     use HasFactory;
     public function serologys(){
-        return $this->hasMany(Serology::class, 'serologies_id', 'id');
+        return $this->hasMany(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

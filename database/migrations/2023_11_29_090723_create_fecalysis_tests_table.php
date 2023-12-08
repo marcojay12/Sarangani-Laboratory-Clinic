@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('fecalysis_tests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('microscopies_id')->references('id')->on('microscopies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('lumbricoides_ova');
             $table->string('trichiura_ova');
             $table->string('hookworm_ova');

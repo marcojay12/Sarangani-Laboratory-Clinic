@@ -15,6 +15,6 @@ class FecalysisMicroscopicExam extends Model
         'yeast_cells'
     ];
     public function fecalysis_micro_exam(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

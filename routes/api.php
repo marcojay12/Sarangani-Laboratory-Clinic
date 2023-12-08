@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AdminSectionController;
+use App\Http\Controllers\PatientInformationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/patients', [PatientInformationController::class, 'index']);
+
+Route::post('/save', [PatientInformationController::class, 'store']);
+
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::post('/signup', [AdminSectionController::class, 'signup']);
-Route::post('/login', [AdminSectionController::class, 'login']);

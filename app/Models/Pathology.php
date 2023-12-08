@@ -12,4 +12,7 @@ class Pathology extends Model
         'pathologist_name',
         'pathologist_license_name'
     ];
+    public function pathologys(){
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
+    }
 }

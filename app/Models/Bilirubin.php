@@ -12,9 +12,10 @@ class Bilirubin extends Model
         'total_bilirubin',
         'direct_bilirubin',
         'indirect_bilirubin'
-    ];
 
-    public function bilirubins(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+    ];
+    public function bilirub()
+    {
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

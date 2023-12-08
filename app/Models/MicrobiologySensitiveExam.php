@@ -14,6 +14,6 @@ class MicrobiologySensitiveExam extends Model
         'intermediate'
     ];
     public function sensitive_exam(){
-        return $this->belongsTo(Microbiology::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

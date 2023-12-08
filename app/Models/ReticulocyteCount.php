@@ -12,6 +12,6 @@ class ReticulocyteCount extends Model
         'reticulocyte'
     ];
     public function reticulocytes(){
-        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

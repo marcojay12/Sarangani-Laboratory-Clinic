@@ -13,6 +13,6 @@ class SerologyTyphoidTest extends Model
         'ig_m'
     ];
     public function typhoid_test(){
-        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminLogin extends FormRequest
+class BloodTypingStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -16,6 +16,13 @@ class AdminLogin extends FormRequest
         return true;
     }
 
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'blood_typing_id' => $this->blood_typing()->id
+        ]);
+    }
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -25,9 +32,8 @@ class AdminLogin extends FormRequest
     {
         return [
             //
-            'admin_username' => 'required|string|unique',
-            'password' => 'required',
-            'remember' => 'boolean'
+            'blood_typing' => 'nullable',
+            'remarks' => 'nullable'
         ];
     }
 }

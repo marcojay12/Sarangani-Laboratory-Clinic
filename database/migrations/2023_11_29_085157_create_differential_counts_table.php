@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('differential_counts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('hematologies_id')->references('id')->on('hematologies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('neutrophils');
             $table->string('lymphocytes');
             $table->string('monocytes');

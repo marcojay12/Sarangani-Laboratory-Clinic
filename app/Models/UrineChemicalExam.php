@@ -15,6 +15,6 @@ class UrineChemicalExam extends Model
         'protein'
     ];
     public function urine_chemical(){
-        return $this->belongsTo(Microscopy::class, 'microscopies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

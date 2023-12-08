@@ -9,6 +9,6 @@ class Covid extends Model
 {
     use HasFactory;
     public function covid(){
-        return $this->hasOne(Covid::class, 'covids_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

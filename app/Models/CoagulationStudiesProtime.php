@@ -15,6 +15,6 @@ class CoagulationStudiesProtime extends Model
         'inr'
     ];
     public function coagulations_protimes(){
-        return $this->belongsTo(Hematology::class, 'hematologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

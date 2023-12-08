@@ -20,6 +20,6 @@ class SerologyExamTest extends Model
         'remarks'
     ];
     public function serology_test(){
-        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

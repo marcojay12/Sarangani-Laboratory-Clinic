@@ -15,6 +15,6 @@ class SerologyDengueDou extends Model
     ];
     public function dengue_dou()
     {
-        return $this->belongsTo(Serology::class, 'serologies_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

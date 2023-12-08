@@ -2,10 +2,9 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Validation\Rules\Password;
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminSignup extends FormRequest
+class BloodTypingUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,6 +13,8 @@ class AdminSignup extends FormRequest
      */
     public function authorize()
     {
+        $blood_type = null;
+        
         return true;
     }
 
@@ -26,12 +27,8 @@ class AdminSignup extends FormRequest
     {
         return [
             //
-            'name' => 'required|string',
-            'admin_username' => 'required|string|unique',
-            'password' => [
-                'required',
-                Password::min(8)->mixedcase()->numbers()->symbols()
-            ]
+            'blood_typing' => 'nullable',
+            'remarks' => 'nullable'
         ];
     }
 }

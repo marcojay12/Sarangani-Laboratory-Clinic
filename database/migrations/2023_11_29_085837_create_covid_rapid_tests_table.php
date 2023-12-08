@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('covid_rapid_tests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('covids_id')->references('id')->on('covids')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('type_of_specimen');
             $table->string('test_kit_brand');
             $table->string('method_test');

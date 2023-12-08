@@ -12,6 +12,6 @@ class Urea extends Model
         'urea'
     ];
     public function urea(){
-        return $this->belongsTo(Chemistry::class, 'chemistries_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

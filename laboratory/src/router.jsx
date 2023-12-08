@@ -1,16 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import AdminDashboard from "./Admin/AdminDashboard";
-import AdminLogin from "./Admin/Login";
-import AdminSignup from "./Admin/Signup";
-import DoctorsInformation from "./Admin/DoctorsInformation";
-import MTInformation from "./Admin/MTInformation";
-import PathologistInformation from "./Admin/PathologistInformation";
-import PatientInformation from "./Admin/PatientsInformation";
-import UserInformation from "./Admin/UsersInformation";
-import AdminLayout from "./components/AdminLayout";
-import Defaultlayout from "./components/DefaultLayout";
 import PatientRegistration from "./Users/PatientRegistration";
-import DoctorNew from "./Admin/DoctorsNew";
+
 import UserDashboard from "./Users/UserDashboard";
 import BloodTyping from "./Users/BloodTyping";
 import Chemistry from "./Users/Chemistry";
@@ -22,7 +12,7 @@ import Microscopy from "./Users/Microscopy";
 import Miscellaneous from "./Users/Miscellaneous";
 import Serology from "./Users/Serology";
 import UserDefaultlayout from "./components/UserDefaultLayout";
-import UserLayout from "./components/UserLayout";
+import Radiology from "./Users/Radiology";
 
 
 const router = createBrowserRouter([
@@ -78,6 +68,10 @@ const router = createBrowserRouter([
             {
                 path: '/serology',
                 element: <Serology />
+            },
+            {
+                path: '/radiology',
+                element: <Radiology />
             }
         ]
     }

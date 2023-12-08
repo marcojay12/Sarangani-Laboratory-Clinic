@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('mt_name');
             $table->string('mt_license_number');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->timestamps();
         });
     }

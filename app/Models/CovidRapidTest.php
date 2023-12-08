@@ -17,6 +17,6 @@ class CovidRapidTest extends Model
         'remarks'
     ];
     public function covids(){
-        return $this->belongsTo(Covid::class, 'covids_id', 'id');
+        return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');
     }
 }

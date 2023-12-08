@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('serology_widal_tests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('serologies_id')->references('id')->on('serologies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('typhi_h');
             $table->string('paratyphi_ah');
             $table->string('paratyphi_bh');

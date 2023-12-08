@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('microbiology_gram_stains', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('microbiologies_id')->references('id')->on('microbiologies')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('specimen');
             $table->string('result');
             $table->string('epithelial_cell');

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('hemoglobins', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('chemistries_id')->references('id')->on('chemistries')->onDelete('cascade');
+            $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
             $table->string('hbac');
             $table->timestamps();
         });
