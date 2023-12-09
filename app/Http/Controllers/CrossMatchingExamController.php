@@ -42,6 +42,7 @@ class CrossMatchingExamController extends Controller
     {
         //
         $validate = $request->validate([
+            'patient_information_id' => 'required',
             "blood_type" => 'nullable',
             "method_test" => 'nullable',
             "serial_number" => 'nullable',

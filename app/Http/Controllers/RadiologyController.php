@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Log;
+use App\Models\Radiology;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class RadiologyController extends Controller
 {
@@ -31,14 +36,36 @@ class RadiologyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
-        ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
-        return response()->json('Done');
+
+         $validate = $request->validate([
+            "patient_information_id" => 'required',
+            "examination_ultrasound" => 'nullable',
+            "result_ultrasound" => 'nullable',
+            "image_ultrasound" => 'nullable',
+            "examination_xray" => 'nullable',
+            "result_xray" => 'nullable',
+            "image_xray" => 'nullable',
+         ]);
+
+        // try {
+        //     $imageName = Str::random() . '.' . $request->image->getClientOriginalExtension();
+        //     Storage::disk('public')->putFileAs('radiologadiology/image', $request->image, $imageName);
+        //     Radiology::create($request->post() + ['image' => $imageName]);
+
+        //     return response()->json([
+        //         'message' => 'Product Created Successfully!!'
+        //     ]);
+        // } catch (\Exception $e) {
+        //     Log::error($e->getMessage());
+        //     return response()->json([
+        //         'message' => 'Something goes wrong while creating a product!!'
+        //     ], 500);
+        // }
+
+
+         $radiologys = new Radiology($validate);
+        $radiologys->save();
+         return response()->json('Done');
     }
 
     /**

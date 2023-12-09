@@ -9,6 +9,7 @@ class CompleteBloodCount extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'hemoglobin',
         'hematocrit',
         'rbc_count',

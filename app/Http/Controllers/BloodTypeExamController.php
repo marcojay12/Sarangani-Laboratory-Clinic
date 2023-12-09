@@ -34,6 +34,7 @@ class BloodTypeExamController extends Controller
         //
 
         $validate = $request->validate([
+            "patient_information_id" => 'required',
             "blood_typing" => 'nullable',
             "remarks" => 'nullable'
         ]);

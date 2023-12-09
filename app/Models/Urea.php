@@ -9,6 +9,7 @@ class Urea extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'urea'
     ];
     public function urea(){

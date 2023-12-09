@@ -9,6 +9,7 @@ class FecalysisMacroscopicExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'color',
         'consistency'
     ];

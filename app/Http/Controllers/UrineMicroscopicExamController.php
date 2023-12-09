@@ -36,11 +36,14 @@ class UrineMicroscopicExamController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "wbc" => 'nullable',
+            "rbc" => 'nullable',
+            "epithelial_cell" => 'nullable',
+            "bacteria" => 'nullable',
+            "mucus_threads" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_microscopic = new UrineMicroscopicExam($validate);
+        $urine_microscopic->save();
         return response()->json('Done');
     }
 

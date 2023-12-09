@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Microbiology;
 use Illuminate\Http\Request;
 
 class MicrobiologyController extends Controller
@@ -34,18 +35,32 @@ class MicrobiologyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validate = $request->validate([
-        //     "lab_number" => 'nullable',
-        //     "specimen" => 'nullable',
-        //     "result" => 'nullable',
-        //     "epithelial_cell" => 'nullable',
-        //     "polymorphonuclears" => 'nullable',
-        //     "remarks" => 'nullable'
-        // ]);
-        // $patient_information = new BloodTypeExam($validate);
-        // $patient_information->save();
-        // return response()->json('Done');
+
+         $validate = $request->validate([
+            "patient_information_id" => 'required',
+             "lab_number" => 'nullable',
+            "specimen_type" => 'nullable',
+            "source_of_specimen" => 'nullable',
+            "result_sensitive" => 'nullable',
+            "culture_isolate" => 'nullable',
+            "sensitive_report" => 'nullable',
+            "resistant_report" => 'required',
+            "intermediate_report" => 'nullable',
+            "specimen_gram" => 'nullable',
+            "result_gram" => 'nullable',
+            "epithelial_cell" => 'nullable',
+            "polymorphonuclears" => 'nullable',
+            "remarks_gram" => 'nullable',
+            "specimen_afb" => 'required',
+            "result_afb" => 'nullable',
+            "remarks_afb" => 'nullable',
+            "specimen_koh" => 'nullable',
+            "result_koh" => 'nullable',
+            "remarks_koh" => 'nullable'
+         ]);
+         $microbiologys = new Microbiology($validate);
+        $microbiologys->save();
+         return response()->json('Done');
     }
 
     /**

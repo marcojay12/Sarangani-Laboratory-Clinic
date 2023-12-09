@@ -16,7 +16,6 @@ class CoagulationStudiesApptsController extends Controller
     {
         //
         return CoagulationStudiesAppts::select(
-            'id',
             'patient_information_id',
             'ptt',
             'control',

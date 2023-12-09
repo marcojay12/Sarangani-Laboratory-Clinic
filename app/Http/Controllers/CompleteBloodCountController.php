@@ -16,7 +16,6 @@ class CompleteBloodCountController extends Controller
     {
         //
         return CompleteBloodCount::select(
-            'id',
             'patient_information_id',
             'hemoglobin',
             'hematocrit',
@@ -35,6 +34,7 @@ class CompleteBloodCountController extends Controller
     {
         //
         $validate = $request->validate([
+            'patient_information_id' => 'required',
             "hemoglobin" => 'nullable',
             "hematocrit" => 'nullable',
             "rbc_count" => 'nullable',

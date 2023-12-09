@@ -9,6 +9,7 @@ class SerologyExamTest extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'hbsag',
         'anti_hbs',
         'anti_hcv',

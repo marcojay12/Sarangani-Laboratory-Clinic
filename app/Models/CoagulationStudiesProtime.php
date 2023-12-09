@@ -9,6 +9,7 @@ class CoagulationStudiesProtime extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'pt',
         'control',
         'activity',

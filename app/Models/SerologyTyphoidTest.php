@@ -9,6 +9,7 @@ class SerologyTyphoidTest extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'ig_g',
         'ig_m'
     ];

@@ -9,6 +9,7 @@ class SerologyWidalTest extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'typhi_h',
         'paratyphi_ah',
         'paratyphi_bh',

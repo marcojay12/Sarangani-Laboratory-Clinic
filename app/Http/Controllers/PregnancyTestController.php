@@ -34,11 +34,12 @@ class PregnancyTestController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
+            "specimen" => 'nullable',
+            "result" => 'nullable',
             "remarks" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $pregnancy = new PregnancyTest($validate);
+        $pregnancy->save();
         return response()->json('Done');
     }
 

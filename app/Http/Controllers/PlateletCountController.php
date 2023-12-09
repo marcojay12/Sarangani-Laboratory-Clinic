@@ -33,11 +33,11 @@ class PlateletCountController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "clotting_time" => 'nullable',
+            "bleeding_time" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $platelet_count = new PlateletCount($validate);
+        $platelet_count->save();
         return response()->json('Done');
     }
 

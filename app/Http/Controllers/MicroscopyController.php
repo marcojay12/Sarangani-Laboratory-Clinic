@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Microscopy;
 use Illuminate\Http\Request;
 
 class MicroscopyController extends Controller
@@ -31,14 +32,68 @@ class MicroscopyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validate = $request->validate([
-        //     "blood_typing" => 'nullable',
-        //     "remarks" => 'nullable'
-        // ]);
-        // $patient_information = new BloodTypeExam($validate);
-        // $patient_information->save();
-        // return response()->json('Done');
+
+         $validate = $request->validate([
+            "patient_information_id" => 'required',
+            "specimen" => 'nullable',
+            "result" => 'nullable',
+            "remarks_pregnancy" => 'nullable',
+
+
+            "color" => 'nullable',
+            "transparency" => 'nullable',
+
+            "wbc_urine" => 'nullable',
+            "rbc_urine" => 'nullable',
+            "epithelial_cell" => 'nullable',
+            "bacteria" => 'nullable',
+            "mucus_threads" => 'nullable',
+
+            "reaction" => 'nullable',
+            "sp_gravity" => 'nullable',
+            "glucose" => 'nullable',
+            "protein" => 'nullable',
+
+            "amorphous_urates" => 'nullable',
+            "amorphous_phosphates" => 'nullable',
+            "calcium_oxalates" => 'nullable',
+            "triple_phosphates" => 'nullable',
+            "uric_acid" => 'nullable',
+            "others_crystal" => 'nullable',
+
+            "hyaline_cast" => 'nullable',
+            "wbc_cast" => 'nullable',
+            "rbc_cast" => 'nullable',
+            "granular_cast" => 'nullable',
+            "pregnancy_test" => 'nullable',
+            "remarks_cast" => 'nullable',
+
+            "color_fecal" => 'nullable',
+            "consistency" => 'nullable',
+
+            "rbc_fecal" => 'nullable',
+            "wbc_fecal" => 'nullable',
+            "fat_globules" => 'nullable',
+            "yeast_cells" => 'nullable',
+
+            "fecal_occult_blood" => 'nullable',
+
+            "lumbricoides_ova" => 'nullable',
+            "trichiura_ova" => 'nullable',
+            "hookworm_ova" => 'nullable',
+            "histolytica_cyst" => 'nullable',
+            "histolytica_trophozoite" => 'nullable',
+            "entamoeba_coli_cyst" => 'nullable',
+            "entamoeba_coli_trophozoite" => 'nullable',
+            "giardia_lamblia_cyst" => 'nullable',
+            "giardia_lamblia_trophozoite" => 'nullable',
+            "others_fecal" => 'nullable',
+            "remarks_fecal" => 'nullable'
+
+         ]);
+         $microscopy = new Microscopy($validate);
+        $microscopy->save();
+         return response()->json('Done');
     }
 
     /**

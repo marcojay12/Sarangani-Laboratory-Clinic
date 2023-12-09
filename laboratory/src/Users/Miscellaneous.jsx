@@ -2,34 +2,73 @@ import { PhotoIcon } from "@heroicons/react/24/outline";
 import PageComponent from "../components/PageComponent";
 import Tbutton from "../components/core/TButton";
 import { useState } from "react";
+import axios from 'axios';
 
 export default function Miscellaneous() {
-        const [doctor, setDoctor] = useState({
-        fullname: '',
-        license_number: '',
-        ptr_number: '',
-         slug: '',
-         status: false,
-         image: null,
-         image_url:null,
+ const [patient_information_id, setPatientID] = useState('');
+  const [test_name, setTestName] = useState('');
+  const [result, setResult] = useState('');
+   const [remarks, setRemarks] = useState('');
 
-    });
+//   async function Load()
+//   {
+//      const result = await axios.get(
+//          "http://localhost:8000/api/patients");
+//          setUsers(result.data);
+//          console.log(result.data);
+//   }
 
-    const onImageChoose = () => {
-        console.log('On image choose')
-    }
-    const onSubmit = (ev) => {
-        ev.preventDefault();
-        console.log(ev);
-    }
+  async function save(event)
+  {
+     event.preventDefault();
+     try {
+       await axios.post(
+             "http://localhost:8000/api/save_misc",
+             {
+                patient_information_id: patient_information_id,
+                 test_name: test_name,
+                 result: result,
+                  remarks: remarks
+
+
+             });
+             alert("Patient Successfully Registered");
+             setPatientID("");
+             setTestName("");
+             setResult("");
+             setRemarks("");
+
+     }
+     catch(err)
+     {
+         alert("Patient Registration Failed");
+     }
+  }
 
     return (
 <PageComponent title='Miscellaneous'>
-
-    <form action="#" method="POST" onSubmit={onSubmit}>
+<div className="sm:col-span-2 " >
+    <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
+  Search
+    </label>
+    <div className="mt-2">
+      <input
+        type="text"
+        name="patient_information_id"
+        id="remarks"
+        autoComplete="given-name"
+        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        value={patient_information_id}
+        onChange={(event) => {
+            setPatientID(event.target.value)
+        }}
+      />
+      </div>
+      </div>
+    <form action="#" method="POST">
                 <div className="shadow sm:overflow-hidden sm:rounded-md">
                     <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
-                         
+
 {/* Blood Typing */}
                                     <div className="border-b border-gray-900/10 pb-12">
                                         <div className="text-center text-lg font-bold"><h1>Miscellaneous Form</h1></div>
@@ -45,7 +84,10 @@ export default function Miscellaneous() {
                   type="text"
                   autoComplete="age"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                value={test_name}
+        onChange={(event) => {
+            setTestName(event.target.value)
+        }}/>
               </div>
             </div>
 
@@ -59,8 +101,10 @@ export default function Miscellaneous() {
                   name="result"
                   rows={3}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  defaultValue={''}
-                />
+                value={result}
+        onChange={(event) => {
+            setResult(event.target.value)
+        }}/>
               </div>
 
             </div>
@@ -76,7 +120,10 @@ export default function Miscellaneous() {
                   autoComplete="given-name"
                   placeholder="Remarks"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                value={remarks}
+        onChange={(event) => {
+            setRemarks(event.target.value)
+        }}/>
               </div>
             </div>
 
@@ -161,11 +208,9 @@ export default function Miscellaneous() {
 
 
 
-                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6"
+                            onClick={save}>
                                     <Tbutton>Add</Tbutton>
-                            </div>
-                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                                    <Tbutton>Print</Tbutton>
                             </div>
                     </div>
                 </div>

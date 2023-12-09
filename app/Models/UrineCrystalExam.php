@@ -9,6 +9,7 @@ class UrineCrystalExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'amorphous_urates',
         'amorphous_phosphates',
         'calcium_oxalates',

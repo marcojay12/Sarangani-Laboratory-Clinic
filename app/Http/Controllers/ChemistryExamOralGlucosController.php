@@ -16,7 +16,6 @@ class ChemistryExamOralGlucosController extends Controller
     {
         //
         return ChemistryExamOralGlucos::select(
-            'id',
             'patient_information_id',
             'glucose_load',
             'glucose_result',

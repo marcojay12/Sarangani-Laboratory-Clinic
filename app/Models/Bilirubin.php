@@ -9,6 +9,7 @@ class Bilirubin extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'total_bilirubin',
         'direct_bilirubin',
         'indirect_bilirubin'

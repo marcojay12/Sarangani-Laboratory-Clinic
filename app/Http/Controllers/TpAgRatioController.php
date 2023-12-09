@@ -35,11 +35,13 @@ class TpAgRatioController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "total_protein" => 'nullable',
+            "albumin" => 'nullable',
+            "globulin" => 'nullable',
+            "ag_ratio" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $tp_ag = new TpAgRatio($validate);
+        $tp_ag->save();
         return response()->json('Done');
     }
 

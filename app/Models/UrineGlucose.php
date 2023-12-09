@@ -9,6 +9,7 @@ class UrineGlucose extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'fasting',
         'first_hour',
         'second_hour',

@@ -40,11 +40,17 @@ class SerologyWidalTestController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "typhi_h" => 'nullable',
+            "paratyphi_ah" => 'nullable',
+            "paratyphi_bh" => 'nullable',
+            "paratyphi_ch" => 'nullable',
+            "typhi_o" => 'nullable',
+            "paratyphi_ao" => 'nullable',
+            "paratyphi_bo" => 'nullable',
+            "paratyphi_co" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $serology_widal = new SerologyWidalTest($validate);
+        $serology_widal->save();
         return response()->json('Done');
     }
 

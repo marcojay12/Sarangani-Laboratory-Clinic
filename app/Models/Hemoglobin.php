@@ -9,7 +9,8 @@ class Hemoglobin extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'hba1c'
+        'patient_information_id',
+        'hbac'
     ];
     public function hemoglobins(){
         return $this->belongsTo(PatientInformation::class, 'patient_information_id', 'id');

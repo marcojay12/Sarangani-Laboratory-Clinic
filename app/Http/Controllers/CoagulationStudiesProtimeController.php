@@ -16,7 +16,6 @@ class CoagulationStudiesProtimeController extends Controller
     {
         //
         return CoagulationStudiesProtime::select(
-            'id',
             'patient_information_id',
             'pt',
             'control',

@@ -36,11 +36,14 @@ class UrineCreatinineController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "urine_volume" => 'nullable',
+            "serum_creatinine" => 'nullable',
+            "urine_creatinine" => 'nullable',
+            "hours_urine_creatinine" => 'nullable',
+            "creatinine_clearance" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_creatinine = new UrineCreatinine($validate);
+        $urine_creatinine->save();
         return response()->json('Done');
     }
 

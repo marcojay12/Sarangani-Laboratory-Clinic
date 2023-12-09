@@ -35,11 +35,13 @@ class UrineGlucoseController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "fasting" => 'nullable',
+            "first_hour" => 'nullable',
+            "second_hour" => 'nullable',
+            "third_hour" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_glucose = new UrineGlucose($validate);
+        $urine_glucose->save();
         return response()->json('Done');
     }
 

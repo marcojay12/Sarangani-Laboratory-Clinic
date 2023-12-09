@@ -37,6 +37,7 @@ class CovidRapidTestController extends Controller
     {
         //
         $validate = $request->validate([
+            'patient_information_id' => 'required',
             "type_of_specimen" => 'nullable',
             "test_kit_brand" => 'nullable',
             "method_test" => 'nullable',

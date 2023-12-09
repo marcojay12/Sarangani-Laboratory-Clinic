@@ -9,6 +9,7 @@ class UrineMicroscopicExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'wbc',
         'rbc',
         'epithelial_cell',

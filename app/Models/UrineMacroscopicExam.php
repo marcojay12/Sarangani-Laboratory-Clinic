@@ -9,6 +9,7 @@ class UrineMacroscopicExam extends Model
 {
     use HasFactory;
      protected $fillable = [
+        'patient_information_id',
         'color',
         'transparency'
     ];

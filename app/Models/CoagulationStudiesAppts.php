@@ -9,6 +9,7 @@ class CoagulationStudiesAppts extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'ptt',
         'control',
         'ratio'

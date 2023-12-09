@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hematology;
 use Illuminate\Http\Request;
 
 class HematologyController extends Controller
@@ -31,14 +32,40 @@ class HematologyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validate = $request->validate([
-        //     "blood_typing" => 'nullable',
-        //     "remarks" => 'nullable'
-        // ]);
-        // $patient_information = new BloodTypeExam($validate);
-        // $patient_information->save();
-        // return response()->json('Done');
+
+        $validate = $request->validate([
+            "patient_information_id" => 'required',
+            "hemoglobin" => 'nullable',
+            "hematocrit" => 'nullable',
+            "rbc_count" => 'nullable',
+            "wbc_count" => 'nullable',
+            "mcv" => 'nullable',
+            "mch" => 'nullable',
+            "mchc" => 'nullable',
+            "neutrophils" => 'nullable',
+            "lymphocytes" => 'nullable',
+            "monocytes" => 'nullable',
+            "eosinophils" => 'nullable',
+            "basophils" => 'nullable',
+            "platelet_count" => 'nullable',
+            "clotting_time" => 'nullable',
+            "bleeding_time" => 'nullable',
+            "erythrocyte" => 'nullable',
+            "reticulocyte" => 'nullable',
+            "remarks_hematology" => 'nullable',
+            "pt" => 'nullable',
+            "protime_control" => 'nullable',
+            "activity" => 'nullable',
+            "inr" => 'nullable',
+            "ptt" => 'nullable',
+            "appt_control" => 'nullable',
+            "ratio" => 'nullable',
+            "remarks_coagulation" => 'nullable',
+
+        ]);
+        $hematologys = new Hematology($validate);
+        $hematologys->save();
+        return response()->json('Done');
     }
 
     /**

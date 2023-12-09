@@ -9,6 +9,7 @@ class PlateletCount extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'clotting_time',
         'bleeding_time'
     ];

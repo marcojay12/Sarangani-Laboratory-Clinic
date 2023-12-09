@@ -35,11 +35,13 @@ class UrineCastExamController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "hyaline_cast" => 'nullable',
+            "wbc_cast" => 'nullable',
+            "rbc_cast" => 'nullable',
+            "granular_cast" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_cast = new UrineCastExam($validate);
+        $urine_cast->save();
         return response()->json('Done');
     }
 

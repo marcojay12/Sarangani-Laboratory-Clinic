@@ -34,6 +34,7 @@ class MiscellaneousFormController extends Controller
     {
         //
         $validate = $request->validate([
+            "patient_information_id" => 'required',
             "test_name" => 'nullable',
             "result" => 'nullable',
             "remarks" => 'nullable'

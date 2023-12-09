@@ -9,6 +9,7 @@ class LipidProfile extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'cholesterol',
         'triglyceride',
         'hdl',

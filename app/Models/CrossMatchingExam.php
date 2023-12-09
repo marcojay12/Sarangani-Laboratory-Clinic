@@ -9,6 +9,7 @@ class CrossMatchingExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'blood_type',
         'method_test',
         'serial_number',

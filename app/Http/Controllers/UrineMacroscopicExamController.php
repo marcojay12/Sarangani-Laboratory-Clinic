@@ -32,11 +32,11 @@ class UrineMacroscopicExamController extends Controller
     public function store(Request $request)
     {
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "color" => 'nullable',
+            "transparency" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_macroscopic = new UrineMacroscopicExam($validate);
+        $urine_macroscopic->save();
         return response()->json('Done');
         //
     }

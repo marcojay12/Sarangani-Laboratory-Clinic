@@ -9,6 +9,7 @@ class SerologyFEIAResult extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'fluorescence_enzyme',
         'cardiac_markers',
         'troponin',

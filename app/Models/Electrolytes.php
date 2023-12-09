@@ -9,6 +9,7 @@ class Electrolytes extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'sodium',
         'potassium',
         'calcium',

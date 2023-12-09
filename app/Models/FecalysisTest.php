@@ -9,6 +9,7 @@ class FecalysisTest extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'lumbricoides_ova',
         'trichiura_ova',
         'hookworm_ova',

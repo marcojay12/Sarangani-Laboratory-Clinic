@@ -40,11 +40,18 @@ class SerologyExamTestController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
+            "hbsag" => 'nullable',
+            "anti_hbs" => 'nullable',
+            "anti_hcv" => 'nullable',
+            "syphilis" => 'nullable',
+            "aso" => 'nullable',
+            "ra_rf" => 'nullable',
+            "crp" => 'nullable',
+            "troponin" => 'nullable',
             "remarks" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $serology_exam = new SerologyExamTest($validate);
+        $serology_exam->save();
         return response()->json('Done');
     }
 

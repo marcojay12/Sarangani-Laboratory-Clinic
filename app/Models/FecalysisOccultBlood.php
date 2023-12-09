@@ -9,6 +9,7 @@ class FecalysisOccultBlood extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'fecal_occult_blood'
     ];
     public function fecalysis_occults(){

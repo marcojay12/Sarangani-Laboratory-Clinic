@@ -9,6 +9,7 @@ class MicrobiologyAfbStain extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'lab_number',
         'specimen',
         'result',

@@ -9,6 +9,7 @@ class FecalysisMicroscopicExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'rbc',
         'wbc',
         'fat_globules',

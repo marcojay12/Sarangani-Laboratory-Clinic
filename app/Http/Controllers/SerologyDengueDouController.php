@@ -34,11 +34,12 @@ class SerologyDengueDouController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "ns" => 'nullable',
+            "ig_g" => 'nullable',
+            "ig_m" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $serology_dengue = new SerologyDengueDou($validate);
+        $serology_dengue->save();
         return response()->json('Done');
     }
 

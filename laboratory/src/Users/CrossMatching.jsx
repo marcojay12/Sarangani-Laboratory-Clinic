@@ -1,37 +1,101 @@
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import PageComponent from "../components/PageComponent";
 import Tbutton from "../components/core/TButton";
+import axios from 'axios';
 import { useState } from "react";
 
 export default function CrossMatching() {
-        const [doctor, setDoctor] = useState({
-        fullname: '',
-        license_number: '',
-        ptr_number: '',
-         slug: '',
-         status: false,
-         image: null,
-         image_url:null,
+  const [patient_information_id, setPatientID] = useState('');
+  const [blood_type, setBloodType] = useState('');
+  const [method_test, setMethodTest] = useState('');
+  const [serial_number, setSerialNumber] = useState('');
+  const [donor_blood_type, setBloodDonor] = useState('');
+  const [source, setSource] = useState('');
+  const [component, setComp] = useState('');
+  const [content, setCont] = useState('');
+  const [extract_date, setExtractDate] = useState('');
+  const [expiry_date, setExpiryDate] = useState('');
+  const [crossmatching_result, setMatchingResult] = useState('');
+  const [others, setOther] = useState('');
+  //   async function Load()
+//   {
+//      const result = await axios.get(
+//          "http://localhost:8000/api/patients");
+//          setUsers(result.data);
+//          console.log(result.data);
+//   }
 
-    });
+  async function save(event)
+  {
+     event.preventDefault();
+     try {
+       await axios.post(
+             "http://localhost:8000/api/save_crossmatch",
+             {
+                patient_information_id: patient_information_id,
+                 blood_type: blood_type,
+                 method_test: method_test,
+                 serial_number: serial_number,
+                 donor_blood_type: donor_blood_type,
+                 source: source,
+                 component: component,
+                 content: content,
+                 extract_date: extract_date,
+                 expiry_date: expiry_date,
+                 crossmatching_result: crossmatching_result,
+                 others: others
 
-    const onImageChoose = () => {
-        console.log('On image choose')
-    }
-    const onSubmit = (ev) => {
-        ev.preventDefault();
-        console.log(ev);
-    }
+
+             });
+             alert("Patient Successfully Registered");
+             setPatientID("");
+             setBloodType("");
+             setMethodTest("");
+             setSerialNumber("");
+             setBloodDonor("");
+             setSource("");
+             setComp("");
+             setCont("");
+             setExtractDate("");
+             setExpiryDate("");
+             setMatchingResult("");
+             setOther("");
+
+     }
+     catch(err)
+     {
+         alert("Patient Registration Failed");
+     }
+  }
+
+
 
     return (
 <PageComponent title='Cross Matching'>
 
-    <form action="#" method="POST" onSubmit={onSubmit}>
+    <form action="#" method="POST">
                 <div className="shadow sm:overflow-hidden sm:rounded-md">
                     <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
 
 
-
+<div className="sm:col-span-2 " >
+    <label htmlFor="first-name" className="block text-2xl text-center font-medium leading-6 text-gray-900">
+  Search
+    </label>
+    <div className="mt-2">
+      <input
+        type="text"
+        name="patient_information_id"
+        id="remarks"
+        autoComplete="given-name"
+        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        value={patient_information_id}
+        onChange={(event) => {
+            setPatientID(event.target.value)
+        }}
+      />
+      </div>
+      </div>
 
 
 
@@ -51,7 +115,12 @@ export default function CrossMatching() {
 
                   placeholder="Ex: Type O"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+
+                        value={blood_type}
+        onChange={(event) => {
+            setBloodType(event.target.value)
+        }}
+      />
               </div>
             </div>
 
@@ -67,7 +136,11 @@ export default function CrossMatching() {
                   type="test"
                   placeholder="Ex: Saliva Extraction"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+
+                 value={method_test}
+        onChange={(event) => {
+            setMethodTest(event.target.value)
+        }}/>
               </div>
             </div>
 
@@ -90,8 +163,10 @@ export default function CrossMatching() {
                   type="text"
                   placeholder="Ex: 123456789"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    disabled
-                />
+                 value={serial_number}
+        onChange={(event) => {
+            setSerialNumber(event.target.value)
+        }}/>
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -106,7 +181,10 @@ export default function CrossMatching() {
 
                   placeholder="Ex. Type O"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                 value={donor_blood_type}
+        onChange={(event) => {
+            setBloodDonor(event.target.value)
+        }}/>
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -120,7 +198,10 @@ export default function CrossMatching() {
                   type="text"
                   placeholder="Ex. Saliva"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                 value={source}
+        onChange={(event) => {
+            setSource(event.target.value)
+        }}/>
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -134,7 +215,10 @@ export default function CrossMatching() {
                   type="text"
                   placeholder="Component"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                 value={component}
+        onChange={(event) => {
+            setComp(event.target.value)
+        }}/>
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -148,7 +232,10 @@ export default function CrossMatching() {
                   type="text"
                   placeholder="Content"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                 value={content}
+        onChange={(event) => {
+            setCont(event.target.value)
+        }}/>
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -161,7 +248,10 @@ export default function CrossMatching() {
                   name="extract_date"
                   type="date"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                value={extract_date}
+        onChange={(event) => {
+            setExtractDate(event.target.value)
+        }} />
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -174,7 +264,10 @@ export default function CrossMatching() {
                   name="expiry_date"
                   type="date"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                value={expiry_date}
+        onChange={(event) => {
+            setExpiryDate(event.target.value)
+        }} />
               </div>
             </div>
                         <div className="grid grid-col-2 gap-2">
@@ -188,7 +281,10 @@ export default function CrossMatching() {
                   type="text"
                   placeholder="Positive/Negative"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                value={crossmatching_result}
+        onChange={(event) => {
+            setMatchingResult(event.target.value)
+        }} />
               </div>
             </div>
 
@@ -207,7 +303,10 @@ export default function CrossMatching() {
                   name="others"
                   type="test"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+                 value={others}
+        onChange={(event) => {
+            setOther(event.target.value)
+        }}/>
               </div>
             </div>
         </div>
@@ -286,11 +385,9 @@ export default function CrossMatching() {
 
 
 
-                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6"
+                            onClick={save}>
                                     <Tbutton>Add</Tbutton>
-                            </div>
-                            <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                                    <Tbutton>Print</Tbutton>
                             </div>
                     </div>
                 </div>

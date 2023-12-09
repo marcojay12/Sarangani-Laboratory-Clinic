@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PageComponent from "../components/PageComponent";
-import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
+// { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 import axios from 'axios';
-import { Await } from "react-router-dom";
+// { Await } from "react-router-dom";
 
 
 export default function PatientRegistration() {
@@ -19,21 +19,21 @@ export default function PatientRegistration() {
     const [ward, setWards] = useState('');
      const [bed_number, setBedNumber] = useState('');
      const [birthday, setBirthday] = useState('');
-     const [users, setUsers] = useState([]);
+     //const [users, setUsers] = useState([]);
 
 
-     useEffect(()=> {
-        (async () => await Load())();
-     },[]);
+    //  useEffect(()=> {
+    //     (async () => await Load())();
+    //  },[]);
 
 
-     async function Load()
-     {
-        const result = await axios.get(
-            "http://localhost:8000/api/patients");
-            setUsers(result.data);
-            console.log(result.data);
-     }
+    //  async function Load()
+    //  {
+    //     const result = await axios.get(
+    //         "http://localhost:8000/api/patients");
+    //         setUsers(result.data);
+    //         console.log(result.data);
+    //  }
 
      async function save(event)
      {

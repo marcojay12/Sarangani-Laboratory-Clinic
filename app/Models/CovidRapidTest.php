@@ -9,6 +9,7 @@ class CovidRapidTest extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'type_of_specimen',
         'test_kit_brand',
         'method_test',

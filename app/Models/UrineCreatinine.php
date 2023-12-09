@@ -9,6 +9,7 @@ class UrineCreatinine extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'urine_volume',
         'serum_creatinine',
         'urine_creatinine',

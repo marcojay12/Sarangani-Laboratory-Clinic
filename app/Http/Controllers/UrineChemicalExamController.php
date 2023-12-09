@@ -35,11 +35,13 @@ class UrineChemicalExamController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "reaction" => 'nullable',
+            "sp_gravity" => 'nullable',
+            "glucose" => 'nullable',
+            "protein" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_chem = new UrineChemicalExam($validate);
+        $urine_chem->save();
         return response()->json('Done');
     }
 

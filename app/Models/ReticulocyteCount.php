@@ -9,6 +9,7 @@ class ReticulocyteCount extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'reticulocyte'
     ];
     public function reticulocytes(){

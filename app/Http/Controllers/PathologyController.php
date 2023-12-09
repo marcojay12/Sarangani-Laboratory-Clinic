@@ -30,14 +30,14 @@ class PathologyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validate = $request->validate([
-        //     "blood_typing" => 'nullable',
-        //     "remarks" => 'nullable'
-        // ]);
-        // $patient_information = new BloodTypeExam($validate);
-        // $patient_information->save();
-        // return response()->json('Done');
+
+         $validate = $request->validate([
+             "pathologist_name" => 'nullable',
+             "pathologist_license_name" => 'nullable'
+         ]);
+         $patho = new Pathology($validate);
+         $patho->save();
+         return response()->json('Done');
     }
 
     /**

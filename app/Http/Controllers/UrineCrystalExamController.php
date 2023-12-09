@@ -36,11 +36,14 @@ class UrineCrystalExamController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "amorphous_urates" => 'nullable',
+            "amorphous_phosphates" => 'nullable',
+            "calcium_oxalates" => 'nullable',
+            "uric_acid" => 'nullable',
+            "others" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urine_crystal = new UrineCrystalExam($validate);
+        $urine_crystal->save();
         return response()->json('Done');
     }
 

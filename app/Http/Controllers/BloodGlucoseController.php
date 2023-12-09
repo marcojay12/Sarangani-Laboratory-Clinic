@@ -35,12 +35,15 @@ class BloodGlucoseController extends Controller
     public function store(Request $request)
     {
         //
-        $request->validate([
+        $validate = $request->validate([
             'fbs'=>'nullable',
             'first_hour' => 'nullable',
             'second_hour' => 'nullable',
             'third_hour' => 'nullable'
         ]);
+        $blood_glucose = new BloodGlucose($validate);
+        $blood_glucose->save();
+        return response()->json('Done');
     }
 
     /**

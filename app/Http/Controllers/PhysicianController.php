@@ -33,11 +33,12 @@ class PhysicianController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "phd_name" => 'nullable',
+            "phd_prt_number" => 'nullable',
+            "phd_license_number" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $phd = new Physician($validate);
+        $phd->save();
         return response()->json('Done');
     }
 

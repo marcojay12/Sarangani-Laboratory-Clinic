@@ -74,7 +74,7 @@ const router = createBrowserRouter([
                 element: <Radiology />
             }
         ]
-    }
+     }
     // {
     //     path:'/',
     //     element: <UserLayout />,

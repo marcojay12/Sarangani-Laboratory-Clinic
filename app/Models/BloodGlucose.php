@@ -11,6 +11,7 @@ class BloodGlucose extends Model
     protected $table = 'blood_glucoses';
 
     protected $fillable = [
+        'patient_information_id',
         'fbs',
         'first_hour',
         'second_hour',

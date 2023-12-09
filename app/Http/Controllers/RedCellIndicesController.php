@@ -34,11 +34,12 @@ class RedCellIndicesController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "mcv" => 'nullable',
+            "mch" => 'nullable',
+            "mchc" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $red_cell = new RedCellIndices($validate);
+        $red_cell->save();
         return response()->json('Done');
     }
 

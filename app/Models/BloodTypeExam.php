@@ -9,6 +9,7 @@ class BloodTypeExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'blood_typing',
         'remarks'
     ];

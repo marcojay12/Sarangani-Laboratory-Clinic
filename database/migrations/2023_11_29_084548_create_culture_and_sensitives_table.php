@@ -16,10 +16,13 @@ return new class extends Migration
         Schema::create('culture_and_sensitives', function (Blueprint $table) {
             $table->id();
             $table->foreignId('patient_information_id')->references('id')->on('patient_information')->onDelete('cascade');
+            $table->string('lab_number');
             $table->string('speciment_type');
             $table->string('source_of_specimen');
             $table->string('result');
-            $table->string('remarks');
+            $table->string('remarks_culture');
+
+
             $table->timestamps();
         });
     }

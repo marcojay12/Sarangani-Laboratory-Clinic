@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('result');
             $table->string('remarks');
             $table->timestamps();
+            
         });
     }
 

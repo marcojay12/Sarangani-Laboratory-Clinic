@@ -9,6 +9,7 @@ class ChemistryExamOralGlucos extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'glucose_load',
         'glucose_result',
         'remarks'

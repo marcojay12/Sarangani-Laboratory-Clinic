@@ -32,11 +32,10 @@ class UreaController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "urea" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $urea = new Urea($validate);
+        $urea->save();
         return response()->json('Done');
     }
 

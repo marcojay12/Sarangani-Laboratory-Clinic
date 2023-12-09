@@ -33,11 +33,11 @@ class SerologyTyphoidTestController extends Controller
     {
         //
         $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
+            "ig_g" => 'nullable',
+            "ig_m" => 'nullable'
         ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
+        $serolofy_typhoid = new SerologyTyphoidTest($validate);
+        $serolofy_typhoid->save();
         return response()->json('Done');
     }
 

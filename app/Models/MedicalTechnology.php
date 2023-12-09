@@ -10,6 +10,7 @@ class MedicalTechnology extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'mt_name',
         'mt_license_number'
     ];

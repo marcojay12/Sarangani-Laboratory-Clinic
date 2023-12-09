@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Serology;
 use Illuminate\Http\Request;
 
 class SerologyController extends Controller
@@ -31,14 +32,40 @@ class SerologyController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        $validate = $request->validate([
-            "blood_typing" => 'nullable',
-            "remarks" => 'nullable'
-        ]);
-        $patient_information = new BloodTypeExam($validate);
-        $patient_information->save();
-        return response()->json('Done');
+
+         $validate = $request->validate([
+            "patient_information_id" => 'required',
+            "troponin_feia" => 'nullable',
+            "ck_mb" => 'nullable',
+            "remarks_feia" => 'nullable',
+            "hbsag" => 'nullable',
+            "anti_hbs" => 'nullable',
+            "anti_hcv" => 'nullable',
+            "syphilis" => 'nullable',
+            "aso" => 'nullable',
+            "ra_rf" => 'nullable',
+            "crp" => 'nullable',
+            "troponin" => 'nullable',
+            "remarks_serology" => 'nullable',
+            "ns" => 'nullable',
+            "ig_g_dengue" => 'nullable',
+            "ig_m_dengue" => 'nullable',
+            "typhi_h" => 'nullable',
+            "paratyphi_ah" => 'nullable',
+            "paratyphi_bh" => 'nullable',
+            "paratyphi_ch" => 'nullable',
+            "typhi_o" => 'nullable',
+            "paratyphi_ao" => 'nullable',
+            "paratyphi_bo" => 'nullable',
+            "paratyphi_co" => 'nullable',
+            "ig_g_typoid" => 'nullable',
+            "ig_m_typoid" => 'nullable'
+
+
+         ]);
+         $serologys = new Serology($validate);
+        $serologys->save();
+         return response()->json('Done');
     }
 
     /**

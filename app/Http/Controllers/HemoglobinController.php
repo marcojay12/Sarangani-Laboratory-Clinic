@@ -32,7 +32,8 @@ class HemoglobinController extends Controller
     {
         //
         $validate = $request->validate([
-            "'hba1c'" => 'nullable'
+            'patient_information_id' => 'required',
+            'hbac' => 'nullable'
         ]);
         $hemoglobin = new Hemoglobin($validate);
         $hemoglobin->save();

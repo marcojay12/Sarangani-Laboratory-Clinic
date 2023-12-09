@@ -9,6 +9,7 @@ class ErythrocyteSedimentation extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'erythrocyte'
     ];
     public function erythrocyte_sedimentations(){

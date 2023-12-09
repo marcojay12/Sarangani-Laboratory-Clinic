@@ -16,7 +16,6 @@ class ChemistryExamResultController extends Controller
     {
         //
         return ChemistryExamResult::select(
-            'id',
             'patient_information_id',
             'fbs',
             'rbs',

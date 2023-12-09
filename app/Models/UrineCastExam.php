@@ -9,6 +9,7 @@ class UrineCastExam extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'hyaline_cast',
         'wbc_cast',
         'rbc_cast',

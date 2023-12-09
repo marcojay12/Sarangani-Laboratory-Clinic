@@ -9,6 +9,7 @@ class SerologyDengueDou extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'patient_information_id',
         'ns',
         'ig_g',
         'ig_m'
